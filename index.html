@@ -133,6 +133,16 @@
 
 .family-legend{display:flex;flex-wrap:wrap;gap:5px;font-size:10px;width:100%;order:3}.family-chip{border:1px solid color-mix(in srgb,var(--family-color) 40%,transparent);color:var(--family-color);padding:3px 7px;border-radius:6px;background:#0b1220}.reference-table{width:100%;border-collapse:collapse;min-width:620px}.reference-table th,.reference-table td{text-align:left;padding:12px;border-bottom:1px solid #334155}.border-cyan-500\/60{border-color:rgba(6,182,212,.6)}.border-cyan-500\/40{border-color:rgba(6,182,212,.4)}.bg-cyan-500\/20{background:rgba(6,182,212,.2)}.text-cyan-300{color:#67e8f9}#presetButtonsContainer{max-height:260px;overflow:auto}details>summary{list-style-position:inside}header .family-legend{max-height:62px;overflow:auto}input[aria-invalid=true]{border-color:#fb7185!important}@media(max-width:420px){header .family-legend{display:none}.fast-entry-actions{flex-wrap:wrap}}
 </style>
+<style>
+.tables-workspace{padding:20px;border:1px solid #263448;border-radius:18px;background:rgba(12,20,33,.96);box-shadow:0 18px 45px #0003;color:#e2e8f0;scroll-margin-top:110px}.tables-workspace[hidden],.tables-workspace [hidden]{display:none!important}.tables-heading,.tables-actions,.tables-toolbar,.tables-controls,.tables-create{display:flex;align-items:end;flex-wrap:wrap;gap:10px}.tables-heading{align-items:center;justify-content:space-between;padding-bottom:14px;border-bottom:1px solid #263448}.tables-heading h2{font-size:17px;font-weight:800}.tables-heading p{margin-top:4px}.tables-muted{font-size:11px;line-height:1.55;color:#94a3b8}.tables-status{font-size:12px;line-height:1.5;color:#7dd3fc;margin:12px 0}.tables-status--error{color:#fda4af}.tables-create{padding:12px;background:#070e1a;border:1px solid #263448;border-radius:12px;margin:12px 0}.tables-field{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1}.tables-field label{font-size:11px;color:#b6c4d6;font-weight:700}.tables-workspace input,.tables-workspace select{min-width:0;max-width:100%;height:36px;border-radius:8px;border:1px solid #334155;background:#080f1d;color:#e2e8f0;padding:6px 9px;font-size:12px}.tables-workspace input:focus,.tables-workspace select:focus,.tables-workspace button:focus-visible{outline:2px solid #38bdf8;outline-offset:2px}.tables-button{padding:9px 12px;border:1px solid #334155;background:#172438;color:#dbeafe;font-size:11px;font-weight:700;border-radius:9px;cursor:pointer;line-height:16px}.tables-button:hover{background:#22344c}.tables-button--primary{background:#075985;border-color:#0284c7;color:#e0f2fe}.tables-button--danger{color:#fda4af}.tables-button:disabled,.tables-workspace input:disabled,.tables-workspace select:disabled{opacity:.5;cursor:wait}.tables-create .tables-field:first-child{flex:3;min-width:150px}.tables-create .tables-field:nth-child(2){max-width:80px}.tables-toolbar{margin:15px 0}.tables-toolbar .tables-field{min-width:180px}.tables-controls{margin:15px 0}.tables-controls .tables-field{min-width:130px}.tables-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,1fr);gap:20px;align-items:start}.tables-board-wrap{min-width:0}.tables-board{position:relative;height:530px;min-width:0;margin:0 0 10px}.tables-felt{position:absolute;inset:15% 12%;border:8px solid #1e293b;border-radius:48%;background:radial-gradient(ellipse at center,#0c473e,#082821);box-shadow:inset 0 0 25px #0007,0 0 0 2px #426057;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;text-align:center;padding:50px}.tables-felt strong{font-size:15px;max-width:90%;overflow-wrap:anywhere}.tables-felt span{font-size:12px;color:#a7f3d0}.tables-felt small{font-size:10px;color:#89aaa1}.tables-seat{position:absolute;width:132px;left:var(--seat-x);top:var(--seat-y);transform:translate(-50%,-50%);padding:8px;border-radius:11px;border:1px solid var(--seat-color,#64748b);background:#0b1424;box-shadow:0 4px 12px #0006;min-width:0}.tables-seat--hero{border:2px solid #38bdf8;background:#10243a}.tables-seat-top{display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:10px;font-weight:800;margin-bottom:5px}.tables-position{color:#fcd34d;font-size:9px;white-space:nowrap}.tables-seat select{width:100%;padding:4px;font-size:10px;height:31px}.tables-seat-meta{font-size:9px;color:#a5b4c8;margin-top:4px;line-height:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tables-dealer{font-size:9px;color:#7d91ac;padding:2px 0;line-height:14px;margin-top:2px;border:0;background:none;cursor:pointer}.tables-dealer--active{color:#fde68a;font-weight:800}.tables-assessment{padding:16px;border:1px solid #334155;border-radius:14px;background:#070f1e}.tables-grade-row{display:flex;gap:12px;align-items:center}.tables-grade{display:flex;align-items:center;justify-content:center;min-width:64px;min-height:64px;padding:8px;background:#0c263c;color:#7dd3fc;border:1px solid #1d5678;border-radius:12px;font-size:31px;font-weight:900}.tables-grade[data-grade^="A"]{color:#6ee7b7;border-color:#047857;background:#052e28}.tables-grade[data-grade^="B"]{color:#7dd3fc}.tables-grade[data-grade^="C"]{color:#fde68a;border-color:#854d0e;background:#2c2109}.tables-grade[data-grade^="D"],.tables-grade[data-grade^="E"],.tables-grade[data-grade^="F"]{color:#fda4af;border-color:#9f1239;background:#300c1b}.tables-grade-row h3{font-size:13px;font-weight:800}.tables-confidence{font-size:11px;line-height:1.6;color:#c4b5fd;margin:12px 0}.tables-list{list-style:disc;padding-left:16px;color:#cbd5e1;font-size:11px;line-height:1.65;display:flex;flex-direction:column;gap:6px}.tables-guides{margin:15px 0;display:flex;flex-direction:column;gap:12px}.tables-guides h4{font-size:11px;text-transform:uppercase;letter-spacing:.07em;font-weight:800;color:#7dd3fc;margin-bottom:5px}.tables-empty{padding:30px 15px;color:#94a3b8;text-align:center;font-size:12px;border:1px dashed #334155;border-radius:12px;margin:15px 0}.tables-recovery{margin-bottom:10px}.tables-position-help{padding:0 12px}.tables-workspace #tableSharedProfilesHelp{margin-top:12px}
+@media(max-width:1199px){.tables-layout{grid-template-columns:1fr}.tables-board{max-width:850px;margin:0 auto 12px;height:500px}.tables-assessment{display:grid;grid-template-columns:1fr 1.5fr;gap:0 20px}.tables-guides{grid-column:2;grid-row:1/5}.tables-assessment>.tables-muted{grid-column:1/-1}.tables-grade-row,.tables-confidence,#tableGradeReasons{grid-column:1}}
+@media(max-width:679px){.tables-workspace{padding:14px}.tables-layout{gap:12px}.tables-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;height:auto}.tables-felt{position:static;grid-column:1/-1;border-width:4px;border-radius:16px;padding:16px;min-height:95px}.tables-seat{position:static;width:auto;transform:none;padding:9px}.tables-seat select{font-size:11px;height:35px}.tables-seat-meta{white-space:normal;min-height:24px}.tables-seat-top{font-size:11px}.tables-position{font-size:10px}.tables-assessment{display:block;padding:14px}.tables-workspace .tables-toolbar .tables-field{min-width:100%;flex-basis:100%}.tables-create .tables-field:first-child{min-width:120px}.tables-heading{align-items:start}.tables-heading .tables-actions{width:100%}.tables-button{min-height:36px}.tables-controls .tables-field{flex-basis:40%;min-width:110px}.tables-position-help{padding:0}.tables-felt strong{max-width:100%}.tables-grade{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.tables-workspace *{scroll-behavior:auto!important;transition:none!important}}
+
+.tables-board[data-seat-count="9"]{height:720px}@media(max-width:679px){.tables-board[data-seat-count="9"]{height:auto}}
+@media(min-width:680px) and (max-width:1199px){.tables-board[data-seat-count="9"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:auto;gap:10px}.tables-board[data-seat-count="9"] .tables-felt{position:static;grid-column:1/-1;border-width:4px;border-radius:16px;padding:16px;min-height:95px}.tables-board[data-seat-count="9"] .tables-seat{position:static;width:auto;transform:none}.tables-board[data-seat-count="9"] .tables-seat select{font-size:11px;height:35px}.tables-board[data-seat-count="9"] .tables-seat-meta{white-space:normal;min-height:24px}}
+
+</style>
 </head>
 <body class="antialiased selection:bg-sky-500/30 selection:text-sky-200 pb-12">
 
@@ -154,6 +164,7 @@
 <div class="family-legend" aria-label="Seven color families"><span class="family-chip" style="--family-color:#fbbf24">Yellow · Tight reg</span><span class="family-chip" style="--family-color:#f43f5e">Red · Aggro LAG reg</span><span class="family-chip" style="--family-color:#ec4899">Pink · Maniac / reactive aggro</span><span class="family-chip" style="--family-color:#10b981">Green · Hyper whale / station</span><span class="family-chip" style="--family-color:#3b82f6">Blue · Balanced / mixed reg</span><span class="family-chip" style="--family-color:#f97316">Orange · Mid-VPIP sticky / passive</span><span class="family-chip" style="--family-color:#06b6d4">Cyan · Loose pre / fit-or-fold</span></div>
       <!-- Header Actions -->
       <div class="flex items-center gap-2">
+        <a href="#tableWorkspaceSection" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700/90 text-sky-300 border border-slate-700 text-xs font-semibold">Tables</a>
         <button id="btnOpenChartModal" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 border border-slate-700 text-xs font-semibold flex items-center gap-1.5 transition">
           <i class="fa-solid fa-table-list text-sky-400"></i>
           <span>Master Chart</span>
@@ -789,8 +800,8 @@
           </div>
         </div>
         <div class="flex flex-wrap items-center gap-2">
-          <button id="btnExportPlayers" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold">Export Backup</button>
-          <button id="btnImportPlayers" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold">Import Backup</button>
+          <button id="btnExportPlayers" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold">Export Players</button>
+          <button id="btnImportPlayers" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold">Import Players</button>
           <input id="importPlayersFile" type="file" accept=".json,application/json" class="hidden" aria-label="Choose player database backup" />
         </div>
       </div>
@@ -862,6 +873,7 @@
 
   <!-- APPLICATION LOGIC -->
   <script>
+
 
     /*************************************************************************
      * 1. STAT CONFIGURATION & LOOK-ALIKE PRESETS
@@ -2213,6 +2225,7 @@
       playerNameIndex = new Map(cachedPlayers.map(p => [p.nameKey, p]));
       renderPlayerDatabase();
       updateDuplicateNameHint();
+      window.dispatchEvent(new CustomEvent('poker-players-updated'));
       if (invalid) setDatabaseStatus(`${invalid} damaged profile(s) could not be displayed. Original stored data has been retained.`, true);
       return invalid;
     }
@@ -2667,6 +2680,7 @@
       initPlayerDatabaseControls();
     });
   
+
 </script>
 <script>
 /* Fast, explicit player entry. The regular save/import/export controls remain intact. */
@@ -2914,6 +2928,480 @@
 
   if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initFastEntry);
   else initFastEntry();
+})();
+
+</script>
+
+<script>
+/* Pure seating and selection model. Clockwise seat numbers follow action around
+   the table; the score is a transparent HUD heuristic, never expected profit. */
+const PokerTablesModel = (() => {
+  'use strict';
+  const STAT_KEYS = ['vpip','pfr','threeBet','f3b','steal','cbet','fcbet','cr','wtsd','wsd'];
+  const MAX_TABLES = 100;
+  const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
+  const id = () => typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+    ? crypto.randomUUID() : `table_${Date.now().toString(36)}_${Math.random().toString(36).slice(2)}`;
+  const cleanName = (value, max, fallback) => {
+    if (typeof value !== 'string') throw new Error('Names must be text.');
+    const text = value.trim().replace(/\s+/g,' ');
+    if (text.length > max) throw new Error(`Names are limited to ${max} characters.`);
+    return text || fallback;
+  };
+  function seatValue(raw) {
+    if (raw === null) return null;
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('A seat assignment is invalid.');
+    if (raw.kind === 'hero') return {kind:'hero'};
+    if (raw.kind === 'unknown') return {kind:'unknown', ...(raw.name === undefined ? {} : {name:cleanName(raw.name,120,'Unknown player')})};
+    if (raw.kind === 'player' && typeof raw.playerId === 'string' && raw.playerId.length > 0 && raw.playerId.length <= 128) return {kind:'player',playerId:raw.playerId};
+    throw new Error('Choose an open seat, yourself, an unknown opponent, or a saved player.');
+  }
+  function validateTable(raw) {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('A table is invalid.');
+    if (typeof raw.id !== 'string' || !raw.id || raw.id.length > 128) throw new Error('A table identifier is invalid.');
+    const seatCount = raw.seatCount;
+    if (!Number.isInteger(seatCount) || seatCount < 2 || seatCount > 9) throw new Error('A table must have 2–9 seats.');
+    if (!Array.isArray(raw.seats) || raw.seats.length !== seatCount) throw new Error('Every table must include its complete seat layout.');
+    const seats = Array.from(raw.seats,seatValue), players = new Set();
+    let heroCount = 0;
+    for (const seat of seats) {
+      if (seat?.kind === 'hero') heroCount++;
+      if (seat?.kind === 'player') {
+        if (players.has(seat.playerId)) throw new Error('The same player can be at different tables, but only once at this table.');
+        players.add(seat.playerId);
+      }
+    }
+    if (heroCount > 1) throw new Error('Choose only one seat for yourself at each table.');
+    if (!Number.isInteger(raw.buttonSeat) || raw.buttonSeat < 0 || raw.buttonSeat >= seatCount) throw new Error('The dealer button must point to a seat at this table.');
+    return {id:raw.id,name:cleanName(raw.name,80,'Untitled table'),seatCount,seats,buttonSeat:raw.buttonSeat,
+      updatedAt:typeof raw.updatedAt === 'string' && Number.isFinite(Date.parse(raw.updatedAt)) ? new Date(raw.updatedAt).toISOString() : new Date().toISOString()};
+  }
+  function createTable(name = 'Table 1', seatCount = 6) {
+    return validateTable({id:id(),name,seatCount,seats:Array(seatCount).fill(null),buttonSeat:0,updatedAt:new Date().toISOString()});
+  }
+  function validateWorkspace(raw) {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw) || raw.version !== 1 || !Array.isArray(raw.tables)) throw new Error('This is not a supported table workspace.');
+    if (raw.tables.length > MAX_TABLES) throw new Error(`A workspace supports up to ${MAX_TABLES} tables.`);
+    const tables = raw.tables.map(validateTable), ids = new Set();
+    for (const table of tables) {
+      if (ids.has(table.id)) throw new Error('A table backup contains duplicate table identifiers.');
+      ids.add(table.id);
+    }
+    if (raw.activeTableId !== null && raw.activeTableId !== undefined && (typeof raw.activeTableId !== 'string' || !ids.has(raw.activeTableId))) throw new Error('The active table does not exist in this workspace.');
+    if (raw.revision !== undefined && raw.revision !== null && (typeof raw.revision !== 'string' || !raw.revision || raw.revision.length > 128)) throw new Error('The workspace revision is invalid.');
+    return {version:1,activeTableId:raw.activeTableId ?? tables[0]?.id ?? null,tables,revision:raw.revision ?? null};
+  }
+  function setSeat(raw, seatIndex, assignment) {
+    const table = validateTable(raw);
+    if (!Number.isInteger(seatIndex) || seatIndex < 0 || seatIndex >= table.seatCount) throw new Error('Choose a valid seat.');
+    const seats = table.seats.slice(); seats[seatIndex] = seatValue(assignment);
+    return validateTable({...table,seats,updatedAt:new Date().toISOString()});
+  }
+  function moveHero(raw, seatIndex) {
+    const table = validateTable(raw);
+    if (!Number.isInteger(seatIndex) || seatIndex < 0 || seatIndex >= table.seatCount) throw new Error('Choose a valid seat.');
+    const seats = table.seats.map(seat=>seat?.kind === 'hero' ? null : seat);
+    // The UI must confirm before replacing a seated opponent.
+    seats[seatIndex] = {kind:'hero'};
+    return validateTable({...table,seats,updatedAt:new Date().toISOString()});
+  }
+  function resizeTable(raw, count) {
+    const table = validateTable(raw);
+    if (!Number.isInteger(count) || count < 2 || count > 9) throw new Error('A table must have 2–9 seats.');
+    if (count < table.seatCount && table.seats.slice(count).some(Boolean)) throw new Error('Clear the seats being removed before shrinking this table.');
+    return validateTable({...table,seatCount:count,seats:Array.from({length:count},(_,i)=>table.seats[i] ?? null),buttonSeat:Math.min(table.buttonSeat,count-1),updatedAt:new Date().toISOString()});
+  }
+  const occupied = table => table.seats.flatMap((seat,index)=>seat ? [index] : []);
+  function actionOrder(table, buttonSeat) {
+    const seats = occupied(table);
+    return seats.sort((a,b)=>((a-buttonSeat-1+table.seatCount)%table.seatCount)-((b-buttonSeat-1+table.seatCount)%table.seatCount));
+  }
+  function positionShare(raw, heroIndex, opponentIndex) {
+    const table = validateTable(raw), seats = occupied(table);
+    if (heroIndex === opponentIndex || !seats.includes(heroIndex) || !seats.includes(opponentIndex) || seats.length < 2) return null;
+    let after = 0;
+    for (const button of seats) {
+      const order = actionOrder(table,button);
+      if (order.indexOf(heroIndex) > order.indexOf(opponentIndex)) after++;
+    }
+    return after/seats.length;
+  }
+  function lookup(players, playerId) {
+    return players && typeof players.get === 'function' ? players.get(playerId) : Array.isArray(players) ? players.find(p=>p.id===playerId) : players && Object.prototype.hasOwnProperty.call(players,playerId) ? players[playerId] : undefined;
+  }
+  function currentPositions(raw, players = new Map()) {
+    const table = validateTable(raw), taken = occupied(table);
+    const actualButton = taken.includes(table.buttonSeat) ? table.buttonSeat : taken.find(i=>i>=table.buttonSeat) ?? taken[0] ?? null;
+    const order = actualButton === null ? [] : actionOrder(table,actualButton), n=order.length;
+    const labels = {2:['BB','BTN / SB'],3:['SB','BB','BTN'],4:['SB','BB','CO','BTN'],5:['SB','BB','UTG','CO','BTN'],6:['SB','BB','UTG','HJ','CO','BTN'],7:['SB','BB','UTG','LJ','HJ','CO','BTN'],8:['SB','BB','UTG','UTG+1','LJ','HJ','CO','BTN'],9:['SB','BB','UTG','UTG+1','MP','LJ','HJ','CO','BTN']};
+    const preflop = n === 2 ? [actualButton,order[0]] : n >= 3 ? order.slice(2).concat(order.slice(0,2)) : order;
+    return table.seats.map((seat,seatIndex)=>{
+      const player = seat?.kind === 'player' ? lookup(players,seat.playerId) : undefined;
+      const rank = order.indexOf(seatIndex);
+      return {seatIndex,kind:seat?.kind ?? 'open',hero:seat?.kind==='hero',playerId:seat?.kind==='player'?seat.playerId:undefined,
+        name:seat?.kind==='hero'?'You':seat?.kind==='unknown'?seat.name||'Unknown player':seat?.kind==='player'?player?.playerName||'Missing player':'Open seat',
+        label:rank < 0?'Open':n===1?'Waiting for players':labels[n][rank],isButton:seatIndex===actualButton,buttonAdjusted:actualButton!==table.buttonSeat,
+        postflopOrder:rank<0?null:rank+1,preflopOrder:rank<0?null:preflop.indexOf(seatIndex)+1};
+    });
+  }
+  function playerSignals(player) {
+    if (!player || typeof player !== 'object') return {known:false,opportunity:0,pressure:0,reliability:0,flags:[],knownStats:[]};
+    const stats=player.stats || {}, keys=Array.isArray(player.knownStats)?player.knownStats:STAT_KEYS;
+    const known=new Set(keys.filter(key=>STAT_KEYS.includes(key)&&Number.isFinite(stats[key])&&stats[key]>=0&&stats[key]<=100));
+    const has=(...names)=>names.every(key=>known.has(key)), gap=has('vpip','pfr')?stats.vpip-stats.pfr:0;
+    if (!has('vpip','pfr') || stats.pfr>stats.vpip) return {known:false,opportunity:0,pressure:0,reliability:0,flags:[],knownStats:[...known]};
+    let opportunity=0,pressure=0;
+    const flags=[];
+    if(stats.vpip>=50){opportunity+=7;flags.push('hyper-wide preflop range');}
+    else if(stats.vpip>=35){opportunity+=2;flags.push('loose preflop range');}
+    if(gap>=15){opportunity+=3;flags.push('large passive preflop gap');}
+    else if(gap>=10)opportunity+=1;
+    if(has('fcbet','wtsd')&&stats.fcbet<=38&&stats.wtsd>=33){opportunity+=2;flags.push('sticky showdown calls');}
+    if(has('fcbet')&&stats.fcbet>=56){opportunity+=2;flags.push('frequent flop folds');}
+    if(has('f3b')&&stats.f3b>=60){opportunity+=1;flags.push('frequent folds to 3-bets');}
+    if(stats.vpip<18&&has('steal')&&stats.steal<30)opportunity+=.5;
+    const initiative = stats.vpip>0 && stats.pfr/stats.vpip>=.72;
+    if(initiative&&stats.vpip>=26&&stats.pfr>=20){pressure+=2;flags.push('wide preflop initiative');}
+    if(has('threeBet')&&stats.threeBet>=14){pressure+=3;flags.push('very high 3-bet pressure');}
+    else if(has('threeBet')&&stats.threeBet>=10){pressure+=1.5;flags.push('3-bet pressure');}
+    else if(initiative&&has('threeBet')&&stats.threeBet>=6)pressure+=.75;
+    if(has('steal')&&stats.steal>=46){pressure+=1;flags.push('wide steals');}
+    if(has('cbet')&&stats.cbet>=78){pressure+=.75;flags.push('high flop c-bet');}
+    if(has('cr')&&stats.cr>=12){pressure+=1;flags.push('reactive check-raises');}
+    // Counts attenuate signals; this weight is deliberately not a confidence probability.
+    const actualHands = player.autoEstimateHands===false && Number.isFinite(player.hands) ? Math.max(0,player.hands) : 0;
+    const sd=Number.isFinite(player.showdowns)?Math.max(0,player.showdowns):0;
+    const sampleWeight = actualHands ? .3+.7*Math.sqrt(actualHands/(actualHands+400)) : .3+.45*Math.sqrt(sd/(sd+40));
+    const completenessWeight=.5+.5*known.size/STAT_KEYS.length;
+    const reliability=sampleWeight*completenessWeight;
+    return {known:true,opportunity:clamp(opportunity,0,12),pressure:clamp(pressure,0,8),reliability,flags,knownStats:[...known],
+      limited:known.size<8||actualHands<500,stats,gap};
+  }
+  function scoreTable(raw, players = new Map()) {
+    const table=validateTable(raw), heroIndex=table.seats.findIndex(seat=>seat?.kind==='hero');
+    const positions=currentPositions(table,players), taken=occupied(table), opponents=[];
+    const reasons=[],preflop=[],postflop=[],river=[];
+    let knownCount=0,total=0,weightSum=0,contributionSum=0,limitedCount=0;
+    table.seats.forEach((seat,seatIndex)=>{
+      if(!seat||seat.kind==='hero')return;
+      total++;
+      const player=seat.kind==='player'?lookup(players,seat.playerId):undefined;
+      const signal=playerSignals(player),share=heroIndex<0?null:positionShare(table,heroIndex,seatIndex);
+      const name=player?.playerName||seat.name||(seat.kind==='player'?'Missing player':'Unknown player');
+      const access=share===null?1:.6+.8*share;
+      const pressureCost=share===null?1:.6+.8*(1-share);
+      const contribution=signal.known?(signal.opportunity*access-signal.pressure*pressureCost)*signal.reliability:0;
+      if(signal.known){knownCount++;weightSum+=signal.reliability;contributionSum+=contribution;if(signal.limited)limitedCount++;}
+      let family=player?.classification?.colorKey;
+      if(!family&&player&&typeof classifyPlayer==='function') {try {family=classifyPlayer(player.stats,player.knownStats).colorKey;}catch{}}
+      opponents.push({seatIndex,playerId:seat.kind==='player'?seat.playerId:null,name,kind:seat.kind,known:signal.known,
+        positionShare:share,opportunity:signal.opportunity,pressure:signal.pressure,reliability:signal.reliability,contribution,
+        flags:signal.flags,colorKey:family||null,limited:signal.limited!==false,stats:signal.known?signal.stats:null});
+    });
+    const coverage={known:knownCount,total,unknown:total-knownCount,ratio:total?knownCount/total:0};
+    const threshold=table.seatCount===2?1:2;
+    const canGrade=heroIndex>=0&&knownCount>=threshold;
+    const provisional=!canGrade||coverage.unknown>0||limitedCount>0;
+    // Unknown occupied seats stay in the denominator so they never inflate a score.
+    const score=canGrade?Math.round(clamp(50+5*contributionSum/Math.max(total,1),0,100)):null;
+    const grade=score===null?null:score>=85?'A':score>=70?'B':score>=50?'C':score>=35?'D':'E';
+    const confidence=!canGrade?'Not enough evidence':provisional?'Provisional · incomplete or limited evidence':'Observed lineup · heuristic';
+    if(heroIndex<0)reasons.push('Choose your seat to evaluate access to weaker ranges and pressure from players on your left.');
+    else if(knownCount<threshold)reasons.push(`Add observed VPIP and PFR for ${threshold===1?'the opponent':`at least ${threshold} opponents`} before grading. Empty saved profiles and missing players count as unknown.`);
+    if(coverage.unknown)reasons.push(`${coverage.unknown} occupied opponent seat${coverage.unknown===1?' is':'s are'} unknown or lack observed VPIP/PFR; no favorable score is assumed.`);
+    if(limitedCount)reasons.push(`${limitedCount} observed profile${limitedCount===1?' has':'s have'} partial HUD data or limited actual hand counts; the grade is provisional.`);
+    const strongestTarget=opponents.filter(p=>p.known&&p.opportunity>=3).sort((a,b)=>b.opportunity*b.reliability-a.opportunity*a.reliability)[0];
+    const pressureThreat=opponents.filter(p=>p.known&&p.pressure>=2).sort((a,b)=>b.pressure*(1-(b.positionShare??.5))*b.reliability-a.pressure*(1-(a.positionShare??.5))*a.reliability)[0];
+    if(strongestTarget&&heroIndex>=0){
+      const placement=strongestTarget.positionShare>.5?'You act after them on most button rotations':strongestTarget.positionShare<.5?'They act after you on most button rotations':'Position is balanced across button rotations';
+      reasons.push(`${strongestTarget.name}: ${strongestTarget.flags.slice(0,2).join(' + ')}. ${placement}; favor direct position rather than just counting weak colors.`);
+      preflop.push(`Seek playable value hands in position against ${strongestTarget.name}; isolate only when stack depth, sizing and players behind allow it.`);
+      if(strongestTarget.flags.includes('sticky showdown calls'))postflop.push(`Against ${strongestTarget.name}'s observed sticky calls, reduce low-equity bluffs and size value to their calling range.`);
+      else if(strongestTarget.flags.includes('frequent flop folds'))postflop.push(`Against ${strongestTarget.name}'s frequent flop folds, consider small bets on suitable boards; reassess when they continue.`);
+      else postflop.push(`Use ${strongestTarget.name}'s actual fold and aggression stats before choosing value sizing or bluffs; a wide preflop range does not guarantee river calls.`);
+    }
+    if(pressureThreat&&heroIndex>=0){
+      const side=pressureThreat.positionShare<.5?'often acts after you':'is more often before you';
+      reasons.push(`${pressureThreat.name} ${side} and shows ${pressureThreat.flags.filter(f=>/pressure|initiative|steals|raises/.test(f)).slice(0,2).join(' / ')||'aggression'}. ${pressureThreat.positionShare<.5?'This reduces seat quality.':'Your position helps contain the pressure.'}`);
+      preflop.push(`Account for ${pressureThreat.name} behind you before light isolation or steals; avoid automatically widening into frequent 3-bets.`);
+      postflop.push(`Keep strong hands in your checking range versus ${pressureThreat.name}; bluff-catch selectively using sizing and runout evidence.`);
+    }
+    const heroPosition=positions.find(p=>p.hero);
+    if(heroPosition&&taken.length>=2){
+      preflop.unshift(`Current hand: you are ${heroPosition.label}. ${taken.length===2?'Heads-up: the button is the small blind and acts first preflop; the big blind acts first postflop.':'The seat grade averages a full button orbit; the current button changes this hand’s action order.'}`);
+      if(heroPosition.buttonAdjusted)reasons.push('The button points at an open seat; current positions use the next occupied seat until you place the button on a player.');
+    }
+    if(!preflop.length)preflop.push('Assign your seat and observed opponents first. Until then, use a sound positional strategy rather than a lineup-specific adjustment.');
+    if(!postflop.length)postflop.push('Choose bets by board texture, range advantage and observed fold/aggression opportunities. Unknown players receive no assumed leaks.');
+    river.push('Use each player’s observed lines, sizing and blockers. Flop aggression and W$SD do not establish river bluff frequency.');
+    if(table.seatCount>6)reasons.push('Archetype labels were designed for 6-max; full-ring opening ranges and positional adjustments differ.');
+    reasons.push('Grade is a HUD-based seat-selection aid, not a win-rate estimate. Stakes, rake, stacks, format, your skill and relevant stat opportunities are not modeled.');
+    return {score,grade,provisional,confidence,coverage,reasons,guides:{preflop,postflop,river},positions,opponents,heroIndex,
+      model:'orbit-position-v1',sampleWeight:knownCount?weightSum/knownCount:0};
+  }
+  return {MAX_TABLES,STAT_KEYS,createTable,validateTable,validateWorkspace,setSeat,moveHero,resizeTable,positionShare,currentPositions,playerSignals,scoreTable};
+})();
+
+</script>
+<script>
+/* Persistent table layouts share the player database but never duplicate profiles. */
+const PokerTablesStore = (() => {
+  'use strict';
+  const KEY = 'tableWorkspaceV1';
+  const channel = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('hud_edge_table_workspace_v1') : null;
+  const notifyTables = () => window.dispatchEvent(new CustomEvent('poker-tables-updated'));
+  if (channel) channel.onmessage = notifyTables;
+  const empty = () => ({version:1, revision:null, activeTableId:null, tables:[]});
+  const validate = raw => {
+    const value = PokerTablesModel.validateWorkspace(raw);
+    const revision = raw.revision === undefined ? null : raw.revision;
+    if (revision !== null && (typeof revision !== 'string' || !revision || revision.length > 120)) throw new Error('Invalid table workspace revision. Original data was kept.');
+    return {...value, revision};
+  };
+  function conflict() { return new Error('Tables changed in another tab. Reload the table workspace before editing again. Your previous saved tables were kept.'); }
+  async function load() {
+    const db = await openPlayerDatabase();
+    const raw = await readDatabaseStore(db, 'meta', KEY);
+    return raw === undefined ? empty() : validate(raw);
+  }
+  async function save(raw) {
+    const prepared = validate(raw);
+    const expectedRevision = prepared.revision;
+    const saved = {...prepared, revision:newPlayerId()};
+    const db = await openPlayerDatabase();
+    await new Promise((resolve,reject) => {
+      const tx = db.transaction('meta','readwrite');
+      const store = tx.objectStore('meta');
+      let failure;
+      const req = store.get(KEY);
+      req.onsuccess = () => {
+        const current = req.result;
+        if ((current === undefined ? null : current.revision) !== expectedRevision) {
+          failure=conflict(); tx.abort(); return;
+        }
+        store.put(saved,KEY);
+      };
+      tx.oncomplete=resolve;
+      tx.onabort=()=>reject(failure || tx.error || new Error('Tables could not be saved. Previous saved layouts were kept.'));
+      tx.onerror=()=>{ failure=failure || tx.error; };
+    });
+    if (channel) channel.postMessage('changed');
+    return saved;
+  }
+  function parseBackup(raw) {
+    if (!raw || raw.format !== 'hud-edge-table-workspace' || raw.version !== 1 || !Array.isArray(raw.players)) throw new Error('Choose a HUD Edge tables & players backup (version 1). No data was changed.');
+    if (raw.players.length > 20000) throw new Error('This backup exceeds 20,000 player profiles. No data was changed.');
+    const workspace = validate(raw.workspace);
+    const players = raw.players.map(validatePlayerRecord);
+    if (new Set(players.map(p=>p.nameKey)).size !== players.length) throw new Error('The backup contains duplicate player names. No data was changed.');
+    // Raw identity is required for seat remapping; never infer a player from a seat label.
+    const sourceIds = raw.players.map(p=>p && p.id);
+    if (sourceIds.some(id=>typeof id!=='string' || !id || id.length>120) || new Set(sourceIds).size !== players.length) throw new Error('The backup has missing or duplicate player IDs. No data was changed.');
+    return {workspace,players,sourceIds};
+  }
+  function validateBackup(raw) {
+    const parsed = parseBackup(raw);
+    return {tableCount:parsed.workspace.tables.length,playerCount:parsed.players.length};
+  }
+  async function exportBackup() {
+    const db = await openPlayerDatabase();
+    const snapshot = await new Promise((resolve,reject)=>{
+      const tx=db.transaction(['players','meta'],'readonly');
+      const players=tx.objectStore('players').getAll();
+      const workspace=tx.objectStore('meta').get(KEY);
+      tx.oncomplete=()=>resolve({players:players.result,workspace:workspace.result});
+      tx.onabort=()=>reject(tx.error || new Error('Backup read failed. Please retry.'));
+      tx.onerror=()=>{};
+    });
+    const players=snapshot.players.map(validatePlayerRecord);
+    const workspace=snapshot.workspace === undefined ? empty() : validate(snapshot.workspace);
+    return {format:'hud-edge-table-workspace',version:1,exportedAt:new Date().toISOString(),players,workspace};
+  }
+  async function importBackup(raw, expectedRevision) {
+    const parsed=parseBackup(raw);
+    const db=await openPlayerDatabase();
+    const saved=await new Promise((resolve,reject)=>{
+      const tx=db.transaction(['players','meta'],'readwrite');
+      const players=tx.objectStore('players'), meta=tx.objectStore('meta');
+      const playerRequest=players.getAll(), workspaceRequest=meta.get(KEY);
+      let readCount=0, failure, result;
+      const apply=()=>{
+        if (++readCount!==2) return;
+        if ((workspaceRequest.result === undefined ? null : workspaceRequest.result.revision)!==expectedRevision) {failure=conflict();tx.abort();return;}
+        try {
+          const existingByName=new Map(playerRequest.result.map(p=>[p.nameKey,p]));
+          const idMap=new Map();
+          parsed.players.forEach((entry,i)=>{
+            const existing=existingByName.get(entry.nameKey);
+            const id=existing ? existing.id : newPlayerId();
+            idMap.set(parsed.sourceIds[i],id);
+            players.put({...entry,id,createdAt:existing ? existing.createdAt : entry.createdAt,revision:newPlayerId()});
+          });
+          const missingIds=new Map();
+          const remap=id=>{
+            if (idMap.has(id)) return idMap.get(id);
+            // A dangling source reference must not accidentally bind to a profile in this browser.
+            if (!missingIds.has(id)) missingIds.set(id,`missing_${newPlayerId()}`);
+            return missingIds.get(id);
+          };
+          const tables=parsed.workspace.tables.map(table=>({...table,seats:table.seats.map(seat=>seat && seat.kind==='player' ? {...seat,playerId:remap(seat.playerId)} : seat)}));
+          result=validate({...parsed.workspace,tables,revision:newPlayerId()});
+          meta.put(result,KEY);
+        } catch(error) {failure=error;tx.abort();}
+      };
+      playerRequest.onsuccess=apply; workspaceRequest.onsuccess=apply;
+      tx.oncomplete=()=>resolve(result);
+      tx.onabort=()=>reject(failure || tx.error || new Error('Restore failed. No players or tables were changed.'));
+      tx.onerror=()=>{failure=failure || tx.error;};
+    });
+    if (databaseChannel) databaseChannel.postMessage('changed');
+    if (channel) channel.postMessage('changed');
+    try { await refreshPlayerDatabase(); }
+    catch (error) {
+      const refreshWarning = 'Tables and players were restored, but the player display could not refresh. Reload before relying on table grades.';
+      setDatabaseStatus(refreshWarning, true);
+      return {...saved, refreshWarning};
+    }
+    return saved;
+  }
+  return {load,save,exportBackup,validateBackup,importBackup};
+})();
+
+</script>
+<script>
+/* Shared player references, independently saved table lineups. No network calls. */
+(() => {
+  'use strict';
+  const COLORS={YELLOW:'#fbbf24',RED:'#fb7185',PINK:'#f472b6',GREEN:'#34d399',BLUE:'#60a5fa',ORANGE:'#fb923c',CYAN:'#67e8f9'};
+  const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
+  const option=(value,label)=>{const n=el('option','',label);n.value=value;return n;};
+  const button=(id,label,handler,cls='')=>{const n=el('button','tables-button '+cls,label);n.id=id;n.type='button';n.addEventListener('click',handler);return n;};
+  const clone=v=>JSON.parse(JSON.stringify(v));
+  async function initializeTables(){
+    const databaseSection=document.getElementById('playerDatabaseSection');
+    if(!databaseSection||document.getElementById('tableWorkspaceSection'))return;
+    const host=el('section','tables-workspace');host.id='tableWorkspaceSection';host.setAttribute('aria-labelledby','tableWorkspaceHeading');
+    const heading=el('div','tables-heading');const titleBox=el('div');const title=el('h2','','Tables & seat selection');title.id='tableWorkspaceHeading';
+    titleBox.append(title,el('p','tables-muted','Build several lineups from your saved players. One shared profile can sit at multiple tables.'));
+    const backupActions=el('div','tables-actions');heading.append(titleBox,backupActions);host.append(heading);
+    const status=el('p','tables-status','Opening saved tables…');status.id='tablesStatus';status.setAttribute('role','status');status.setAttribute('aria-live','polite');host.append(status);
+    const recovery=el('div','tables-actions tables-recovery');recovery.hidden=true;host.append(recovery);
+    const createRow=el('div','tables-create');const nameField=el('div','tables-field');const newName=el('input');newName.id='newTableName';newName.type='text';newName.maxLength=80;newName.placeholder='e.g., Cash table 1';
+    const nameLabel=el('label','','New table name');nameLabel.htmlFor=newName.id;nameField.append(nameLabel,newName);
+    const countField=el('div','tables-field');const newCount=el('select');newCount.id='newTableSeatCount';const countLabel=el('label','','Seats');countLabel.htmlFor=newCount.id;
+    for(let n=2;n<=9;n++)newCount.append(option(String(n),String(n)));newCount.value='6';countField.append(countLabel,newCount);
+    createRow.append(nameField,countField);host.append(createRow);
+    const nav=el('div','tables-toolbar');const selectBox=el('div','tables-field');const tableSelect=el('select');tableSelect.id='tableSelector';const selectLabel=el('label','','Current table');selectLabel.htmlFor=tableSelect.id;selectBox.append(selectLabel,tableSelect);nav.append(selectBox);
+    const renameBox=el('div','tables-field');const activeName=el('input');activeName.id='activeTableName';activeName.type='text';activeName.maxLength=80;const activeNameLabel=el('label','','Rename selected table');activeNameLabel.htmlFor=activeName.id;renameBox.append(activeNameLabel,activeName);nav.append(renameBox);
+    const renameButton=button('btnRenameTable','Rename',renameTable);const deleteButton=button('btnDeleteTable','Delete table',deleteTable,'tables-button--danger');nav.append(renameButton,deleteButton);host.append(nav);
+    const controls=el('div','tables-controls');const heroBox=el('div','tables-field');const heroSelect=el('select');heroSelect.id='heroSeatSelect';const heroLabel=el('label','','Your seat');heroLabel.htmlFor=heroSelect.id;heroBox.append(heroLabel,heroSelect);controls.append(heroBox);
+    const dealerBox=el('div','tables-field');const dealerSelect=el('select');dealerSelect.id='dealerSeatSelect';const dealerLabel=el('label','','Dealer button — current hand');dealerLabel.htmlFor=dealerSelect.id;dealerBox.append(dealerLabel,dealerSelect);controls.append(dealerBox);
+    const nextDealer=button('btnNextDealer','Next dealer →',advanceDealer);controls.append(nextDealer);
+    const seatCountBox=el('div','tables-field');const seatCount=el('select');seatCount.id='tableSeatCount';const seatCountLabel=el('label','','Table size');seatCountLabel.htmlFor=seatCount.id;for(let n=2;n<=9;n++)seatCount.append(option(String(n),n+' seats'));seatCountBox.append(seatCountLabel,seatCount);controls.append(seatCountBox);host.append(controls);
+    const layout=el('div','tables-layout');const boardWrap=el('div','tables-board-wrap');const board=el('div','tables-board');board.id='tableSeatMap';board.setAttribute('aria-label','Table seats in clockwise order');boardWrap.append(board,el('p','tables-muted tables-position-help','Seats run clockwise. Your immediate clockwise neighbor is on your left. The grade uses position across a full button orbit; the guide also shows this hand’s positions.'));
+    const assessment=el('aside','tables-assessment');assessment.setAttribute('aria-label','Seat selection assessment');const gradeRow=el('div','tables-grade-row');const grade=el('strong','tables-grade','—');grade.id='tableGrade';const gradeText=el('div');gradeText.append(el('h3','','Table selection grade'));const gradeScore=el('p','tables-muted');gradeScore.id='tableGradeScore';gradeText.append(gradeScore);gradeRow.append(grade,gradeText);assessment.append(gradeRow);
+    const confidence=el('p','tables-confidence');confidence.id='tableGradeConfidence';assessment.append(confidence);const reasons=el('ul','tables-list');reasons.id='tableGradeReasons';assessment.append(reasons);
+    const guides=el('div','tables-guides');for(const [suffix,label]of[['Preflop','Preflop'],['Postflop','Flop & turn'],['River','River']]){const group=el('div');const h=el('h4','',label);const list=el('ul','tables-list');list.id='tableGuide'+suffix;group.append(h,list);guides.append(group);}assessment.append(guides,el('p','tables-muted','This is a relative lineup heuristic, not a win-rate prediction. Stack depth, stakes, rake, position-specific samples and your own edge still matter.'));
+    layout.append(boardWrap,assessment);host.append(layout);const empty=el('p','tables-empty','Create a table, choose your seat, then assign opponents from the player database.');empty.id='tablesEmptyState';host.append(empty);
+    const sharedInfo=el('p','tables-muted');sharedInfo.id='tableSharedProfilesHelp';host.append(sharedInfo);
+    const file=el('input');file.id='importTablesFile';file.type='file';file.accept='.json,application/json';file.hidden=true;file.setAttribute('aria-label','Choose full table workspace backup');host.append(file);
+    databaseSection.before(host);
+    let state=null,saving=false,dirty=false,loading=false,loadSequence=0,remotePending=false,playerRefreshBlocked=false;
+    const playerMap=()=>new Map((playerRefreshBlocked||typeof cachedPlayers==='undefined'?[]:cachedPlayers).map(p=>[p.id,p]));
+    const active=()=>state?.tables.find(t=>t.id===state.activeTableId)||null;
+    const say=(message,error=false)=>{status.textContent=message;status.classList.toggle('tables-status--error',error);};
+    const lock=()=>{host.querySelectorAll('button,input,select').forEach(n=>n.disabled=saving||loading||!state);recovery.querySelectorAll('button').forEach(n=>n.disabled=saving||loading||(n.id==='btnRetryTablesSave'&&!state));};
+    const displaySeat=(seat,players)=>!seat?'Open seat':seat.kind==='hero'?'You (hero)':seat.kind==='unknown'?(seat.name||'Unknown opponent'):(players.get(seat.playerId)?.playerName||'Missing saved profile');
+    const revision=()=>state?.revision??null;
+    async function reload(external=false){
+      if(saving||dirty){remotePending=true;if(external)say('Tables changed in another tab. Your draft is kept; export it or reload the saved workspace before continuing.',true);return;}
+      const sequence=++loadSequence;loading=true;lock();
+      try{const loaded=await PokerTablesStore.load();if(sequence!==loadSequence)return;state=loaded;dirty=false;remotePending=false;render();say(state.tables.length?'Saved tables loaded. Lineups share the latest player profiles.':'No saved tables yet. Add your first table below.');}
+      catch(error){say(error?.message||'Tables could not be loaded. Your player database is unchanged.',true);recovery.hidden=false;}
+      finally{loading=false;lock();}
+    }
+    async function persist(next,message,focusSelector){
+      if(saving||loading)return;
+      state=next;dirty=true;saving=true;render();say('Saving table workspace…');lock();
+      try{const saved=await PokerTablesStore.save(state);state=saved;dirty=false;render();say(message||'Table workspace saved.');}
+      catch(error){dirty=true;say((error?.message||'The table workspace could not be saved.')+' Your changes are retained in this tab. Retry save or reload the saved workspace.',true);render();}
+      finally{saving=false;lock();if(remotePending&&!dirty)await reload(true);if(focusSelector)host.querySelector(focusSelector)?.focus();}
+    }
+    async function mutateTable(nextTable,message,focusSelector){
+      if(!state||!active()||saving||loading)return;
+      const next={...clone(state),tables:state.tables.map(t=>t.id===nextTable.id?nextTable:clone(t))};await persist(next,message,focusSelector);
+    }
+    function renderList(node,values){node.replaceChildren();for(const value of values||[])node.append(el('li','',String(value)));}
+    function render(){
+      if(!state){lock();return;}
+      const table=active(),players=playerMap();
+      tableSelect.replaceChildren();if(!state.tables.length)tableSelect.append(option('','No tables yet'));for(const t of state.tables){const rating=PokerTablesModel.scoreTable(t,players);tableSelect.append(option(t.id,t.name+(rating.grade?' · '+rating.grade+(rating.provisional?' (provisional)':''):' · not graded')));}tableSelect.value=state.activeTableId||'';
+      nav.hidden=!table;controls.hidden=!table;layout.hidden=!table;empty.hidden=Boolean(table);
+      recovery.hidden=!(dirty||remotePending);sharedInfo.textContent=playerRefreshBlocked?'Player details need a refresh. Lineup grades treat profiles as unknown until the player database reloads.':players.size?'Player edits update every table containing that profile. Removing a player profile leaves a visible missing-profile seat until you reassign it.':'Save players in the database first to assign their full profiles. You can still use unknown opponent seats.';
+      if(!table){board.replaceChildren();lock();return;}
+      if(document.activeElement!==activeName)activeName.value=table.name;seatCount.value=String(table.seatCount);
+      heroSelect.replaceChildren(option('','Choose your seat'));dealerSelect.replaceChildren();for(let i=0;i<table.seatCount;i++){heroSelect.append(option(String(i),'Seat '+(i+1)));dealerSelect.append(option(String(i),'Seat '+(i+1)+(table.seats[i]?'':' · open')));}const heroIndex=table.seats.findIndex(s=>s?.kind==='hero');heroSelect.value=heroIndex<0?'':String(heroIndex);dealerSelect.value=String(table.buttonSeat);
+      const result=PokerTablesModel.scoreTable(table,players);grade.textContent=result.grade||'—';grade.dataset.grade=result.grade||'none';gradeScore.textContent=result.score===null?'Assign your seat and enough observed opponent profiles.':`Relative score ${Math.round(result.score)}/100 · full button orbit`;
+      confidence.textContent=[result.provisional?'Provisional assessment':'Observed lineup assessment',result.confidence,`${result.coverage?.known??0}/${result.coverage?.total??0} opponents have usable profiles`].filter(Boolean).join(' · ');
+      renderList(reasons,result.reasons);renderList(document.getElementById('tableGuidePreflop'),result.guides?.preflop);renderList(document.getElementById('tableGuidePostflop'),result.guides?.postflop);renderList(document.getElementById('tableGuideRiver'),result.guides?.river);
+      board.replaceChildren();board.dataset.seatCount=String(table.seatCount);const felt=el('div','tables-felt');felt.append(el('strong','',table.name),el('span','',heroIndex<0?'Choose your seat':'You: seat '+(heroIndex+1)),el('small','','Clockwise seat order'));board.append(felt);
+      const positions=new Map((result.positions||[]).map(p=>[p.seatIndex,p]));
+      const used=new Set(table.seats.filter(s=>s?.kind==='player').map(s=>s.playerId));
+      const sortedPlayers=[...players.values()].sort((a,b)=>a.playerName.localeCompare(b.playerName,undefined,{numeric:true,sensitivity:'base'}));
+      table.seats.forEach((seat,index)=>{
+        const card=el('div','tables-seat'+(seat?.kind==='hero'?' tables-seat--hero':''));card.dataset.seatCard=String(index);card.setAttribute('aria-label','Seat '+(index+1)+': '+displaySeat(seat,players));
+        const angle=-Math.PI/2+2*Math.PI*index/table.seatCount;card.style.setProperty('--seat-x',(50+35*Math.cos(angle))+'%');card.style.setProperty('--seat-y',(50+35*Math.sin(angle))+'%');
+        const profile=seat?.kind==='player'?players.get(seat.playerId):null;const color=profile?.classification?.colorKey;card.style.setProperty('--seat-color',COLORS[color]||'#64748b');
+        const top=el('div','tables-seat-top');const seatLabel=el('label','','Seat '+(index+1));seatLabel.htmlFor='tableSeat_'+index;const pos=positions.get(index);const badge=el('span','tables-position',pos?.label||'Open');top.append(seatLabel,badge);card.append(top);
+        const select=el('select','tables-seat-select');select.id='tableSeat_'+index;select.dataset.tableSeat=String(index);select.setAttribute('aria-label','Assign player to seat '+(index+1));
+        select.append(option('','Open seat'),option('unknown','Unknown opponent'),option('hero','You (hero)'));
+        if(seat?.kind==='player'&&!players.has(seat.playerId))select.append(option('player:'+seat.playerId,'Missing profile · reassign'));
+        for(const p of sortedPlayers){const name=p.playerName+(p.classification?.colorKey?' · '+p.classification.colorKey:'');const o=option('player:'+p.id,name);if(used.has(p.id)&&seat?.playerId!==p.id)o.disabled=true;select.append(o);}
+        select.value=!seat?'':seat.kind==='player'?'player:'+seat.playerId:seat.kind;select.title=displaySeat(seat,players);
+        select.addEventListener('change',()=>assignSeat(index,select.value));card.append(select);
+        const meta=el('p','tables-seat-meta',seat?.kind==='hero'?'Your seat':profile?.classification?.subBadge||(!seat?'Available':seat.kind==='unknown'?'No observed profile':'Missing profile; treated as unknown'));meta.title=meta.textContent;card.append(meta);
+        const dealer=el('button','tables-dealer'+(table.buttonSeat===index?' tables-dealer--active':''),table.buttonSeat===index?'● Dealer button':'Set button');dealer.type='button';dealer.dataset.dealerSeat=String(index);dealer.setAttribute('aria-label','Set dealer button at seat '+(index+1));dealer.setAttribute('aria-pressed',String(table.buttonSeat===index));dealer.addEventListener('click',()=>changeDealer(index));card.append(dealer);board.append(card);
+      });
+      lock();
+    }
+    async function addTable(){
+      if(!state||saving||loading)return;try{const name=newName.value.trim()||'Table '+(state.tables.length+1);const table=PokerTablesModel.createTable(name,Number(newCount.value));const next={...clone(state),activeTableId:table.id,tables:[...state.tables,table]};await persist(next,`Created ${name}. Choose your seat and add opponents.`,'#heroSeatSelect');if(!dirty)newName.value='';}catch(error){say(error.message,true);}
+    }
+    async function renameTable(){const table=active();if(!table||saving||loading)return;const name=activeName.value.trim();if(!name){say('Enter a table name before renaming.',true);activeName.focus();return;}try{const changed=PokerTablesModel.validateTable({...clone(table),name,updatedAt:new Date().toISOString()});await mutateTable(changed,'Table renamed.','#activeTableName');}catch(error){say(error.message,true);}}
+    async function deleteTable(){const table=active();if(!table||saving||loading)return;if(!window.confirm(`Delete “${table.name}” and its seating layout? Saved player profiles will be kept.`))return;const tables=state.tables.filter(t=>t.id!==table.id);await persist({...clone(state),tables,activeTableId:tables[0]?.id||null},'Table deleted. Saved player profiles are unchanged.','#tableSelector');}
+    async function assignSeat(index,value){
+      const table=active();if(!table||saving||loading)return;const players=playerMap();try{let next;if(value==='hero'){
+        const occupant=table.seats[index];if(occupant&&occupant.kind!=='hero'&&!window.confirm(`Replace ${displaySeat(occupant,players)} in seat ${index+1} with you? Their saved profile will be kept.`)){render();return;}
+        next=PokerTablesModel.moveHero(table,index);
+      }else{const seat=!value?null:value==='unknown'?{kind:'unknown'}:{kind:'player',playerId:value.slice(7)};next=PokerTablesModel.setSeat(table,index,seat);}
+      await mutateTable(next,'Seat assignment saved. Other tables keep their own seating.','[data-table-seat="'+index+'"]');}catch(error){say(error.message,true);render();}
+    }
+    async function changeDealer(index){const table=active();if(!table||saving||loading)return;try{const next=PokerTablesModel.validateTable({...clone(table),buttonSeat:index,updatedAt:new Date().toISOString()});await mutateTable(next,'Dealer button updated. The orbit grade is unchanged; the current-hand guide has updated.','#dealerSeatSelect');}catch(error){say(error.message,true);}}
+    async function advanceDealer(){const table=active();if(!table)return;let next=table.buttonSeat;for(let step=1;step<=table.seatCount;step++){const i=(table.buttonSeat+step)%table.seatCount;if(table.seats[i]){next=i;break;}}await changeDealer(next);}
+    async function resizeTable(){const table=active();if(!table)return;const count=Number(seatCount.value);if(count<table.seatCount&&table.seats.slice(count).some(Boolean)&&!window.confirm('Reducing the table size removes assignments in seats '+(count+1)+'–'+table.seatCount+'. Saved player profiles will be kept. Continue?')){render();return;}try{const seats=table.seats.slice(0,count);while(seats.length<count)seats.push(null);await mutateTable(PokerTablesModel.validateTable({...clone(table),seatCount:count,seats,buttonSeat:Math.min(table.buttonSeat,count-1),updatedAt:new Date().toISOString()}),'Table size updated.','#tableSeatCount');}catch(error){say(error.message,true);render();}}
+    const addButton=button('btnAddTable','Add table',addTable,'tables-button--primary');createRow.append(addButton);
+    const exportButton=button('btnExportTables','Export tables + players',async()=>{
+      if(!state||saving||loading)return;
+      try{const backup=await PokerTablesStore.exportBackup();if(dirty){backup.workspace=clone(state);PokerTablesStore.validateBackup(backup);}const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=el('a');a.href=url;a.download='hud-edge-tables-'+(dirty?'unsaved-draft-':'')+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);say(dirty?'Exported your unsaved table draft with saved player profiles. This download did not change the database.':'Exported tables and their player profiles. Import this backup to restore the lineup in another browser.');}catch(error){say(error.message,true);}
+    });
+    const importButton=button('btnImportTables','Import tables + players',()=>file.click());backupActions.append(exportButton,importButton);
+    recovery.append(button('btnRetryTablesSave','Retry save',()=>persist(clone(state),'Table changes saved.')),button('btnReloadTables','Reload saved tables',async()=>{if(dirty&&!window.confirm('Discard unsaved table changes and reload the latest saved workspace?'))return;dirty=false;await reload();}));
+    tableSelect.addEventListener('change',async()=>{if(!state||saving||loading)return;await persist({...clone(state),activeTableId:tableSelect.value||null},'Selected table saved.','#tableSelector');});
+    heroSelect.addEventListener('change',()=>{if(heroSelect.value!=='')assignSeat(Number(heroSelect.value),'hero');else{const index=active()?.seats.findIndex(seat=>seat?.kind==='hero')??-1;if(index>=0)assignSeat(index,'');}});dealerSelect.addEventListener('change',()=>changeDealer(Number(dealerSelect.value)));seatCount.addEventListener('change',resizeTable);
+    newName.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addTable();}});activeName.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();renameTable();}});
+    file.addEventListener('change',async()=>{
+      const chosen=file.files[0];if(!chosen)return;if(saving||loading){file.value='';return;}
+      try{if(chosen.size>20*1024*1024)throw new Error('Choose a table workspace backup smaller than 20 MB.');let backup;try{backup=JSON.parse(await chosen.text());}catch{throw new Error('This file is not valid JSON. Nothing was changed.');}const summary=await PokerTablesStore.validateBackup(backup);if(!window.confirm(`Import ${summary.tableCount} table(s) and ${summary.playerCount} player profile(s)? This replaces your saved table workspace and may overwrite player profiles with matching names. Export a backup first if you need the current layout. Unmatched player profiles will be kept.`))return;
+        saving=true;lock();const saved=await PokerTablesStore.importBackup(backup,revision());state=saved;dirty=false;playerRefreshBlocked=Boolean(saved.refreshWarning);render();say(saved.refreshWarning||'Imported tables and player profiles. Shared seats use the restored profiles.',Boolean(saved.refreshWarning));
+      }catch(error){say((error.message||'Import failed.')+' Nothing was replaced unless the database confirmed the import.',true);}
+      finally{saving=false;file.value='';render();lock();if(remotePending&&!dirty)await reload(true);}
+    });
+    window.addEventListener('poker-players-updated',()=>{playerRefreshBlocked=false;if(state)render();});
+    window.addEventListener('poker-tables-updated',()=>reload(true));
+    window.addEventListener('focus',()=>{if(state&&!saving&&!dirty)reload(true);});
+    lock();await reload();
+  }
+  if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initializeTables);else initializeTables();
 })();
 
 </script>
