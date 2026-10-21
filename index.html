@@ -141,6 +141,20 @@
 
 .tables-board[data-seat-count="9"]{height:720px}@media(max-width:679px){.tables-board[data-seat-count="9"]{height:auto}}
 @media(min-width:680px) and (max-width:1199px){.tables-board[data-seat-count="9"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:auto;gap:10px}.tables-board[data-seat-count="9"] .tables-felt{position:static;grid-column:1/-1;border-width:4px;border-radius:16px;padding:16px;min-height:95px}.tables-board[data-seat-count="9"] .tables-seat{position:static;width:auto;transform:none}.tables-board[data-seat-count="9"] .tables-seat select{font-size:11px;height:35px}.tables-board[data-seat-count="9"] .tables-seat-meta{white-space:normal;min-height:24px}}
+/* Hero, stacks, explanations, and per-opponent practical notes. */
+.tables-stack-field{display:flex;flex-direction:column;gap:3px;margin-top:6px}.tables-stack-field label{font-size:9px;font-weight:700;color:#94a3b8}.tables-seat .tables-stack-input{width:100%;height:29px;font-size:11px;padding:4px 6px}.tables-stack-input[aria-invalid=true]{border-color:#fb7185;background:#350f1f}.tables-seat:has([data-hero-hud]){padding-bottom:8px}.tables-seat [data-hero-hud]{white-space:normal}.tables-grade-why{font-size:12px;font-weight:650;line-height:1.65;color:#dbeafe;margin:12px 0}.tables-breakdown{border-top:1px solid #334155;border-bottom:1px solid #334155;padding:10px 0;margin:12px 0}.tables-breakdown summary,.tables-glossary summary{cursor:pointer;font-weight:750;font-size:12px;color:#7dd3fc;list-style-position:inside}.tables-breakdown-body{margin-top:12px;display:flex;flex-direction:column;gap:10px}.tables-formula{font-size:11px;line-height:1.6;color:#cbd5e1;overflow-wrap:anywhere}.tables-grade-components{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 12px;font-size:11px;color:#cbd5e1}.tables-grade-components dd{font-family:monospace;color:#7dd3fc;text-align:right}.tables-preserved{border:1px solid #9a701d;border-radius:12px;padding:14px;background:#241c0e;margin:15px 0}.tables-preserved h3,.tables-exploits>h3{font-size:14px;font-weight:800;margin-bottom:7px}.tables-preserved-list{display:flex;flex-direction:column;gap:9px;margin-top:12px}.tables-preserved-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px}.tables-preserved-row strong{flex:1;min-width:100px;overflow-wrap:anywhere}.tables-preserved-row select{min-width:100px}.tables-exploits{margin-top:18px;border-top:1px solid #263448;padding-top:18px}.tables-exploit-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.tables-exploit-card{min-width:0;padding:14px;border:1px solid var(--opponent-color,#334155);border-radius:12px;background:#091222}.tables-exploit-header{display:flex;gap:10px;justify-content:space-between;align-items:start;flex-wrap:wrap;margin-bottom:7px}.tables-exploit-header h4{font-size:13px;font-weight:800;overflow-wrap:anywhere;min-width:0;max-width:100%}.tables-exploit-badge{font-size:10px;font-weight:800;color:var(--opponent-color,#94a3b8)}.tables-exploit-card h5{font-size:10px;color:#7dd3fc;text-transform:uppercase;font-weight:750;margin:12px 0 5px}.tables-exploit-card>.tables-muted{margin-bottom:8px}.tables-exploit-card .tables-list{overflow-wrap:anywhere}.tables-exploit-cautions{color:#fcd34d;margin-top:12px}.tables-live-read{font-size:11px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;background:#111d31;padding:9px;border-radius:8px;margin-top:12px}.tables-glossary{scroll-margin-top:125px;margin-top:20px;padding:14px;border:1px solid #334155;border-radius:12px;background:#07101e}.tables-glossary-terms{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px 18px;margin-top:16px;font-size:12px;line-height:1.6}.tables-glossary-terms dt{color:#7dd3fc;font-weight:750}.tables-glossary-terms dd{color:#cbd5e1;overflow-wrap:anywhere}
+/* Taller per-seat cards need more room. Larger lineups use numbered grids. */
+@media(min-width:680px){.tables-board[data-seat-count="4"],.tables-board[data-seat-count="5"],.tables-board[data-seat-count="6"]{height:790px}.tables-board[data-seat-count="7"],.tables-board[data-seat-count="8"],.tables-board[data-seat-count="9"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:auto;gap:10px}.tables-board[data-seat-count="7"] .tables-felt,.tables-board[data-seat-count="8"] .tables-felt,.tables-board[data-seat-count="9"] .tables-felt{position:static;grid-column:1/-1;border-width:4px;border-radius:16px;padding:16px;min-height:95px}.tables-board[data-seat-count="7"] .tables-seat,.tables-board[data-seat-count="8"] .tables-seat,.tables-board[data-seat-count="9"] .tables-seat{position:static;width:auto;transform:none}.tables-board[data-seat-count="7"] .tables-seat-meta,.tables-board[data-seat-count="8"] .tables-seat-meta,.tables-board[data-seat-count="9"] .tables-seat-meta{white-space:normal;min-height:24px}}
+@media(max-width:1199px){.tables-assessment{display:block}.tables-assessment>.tables-guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.tables-board[data-seat-count="4"],.tables-board[data-seat-count="5"],.tables-board[data-seat-count="6"]{max-width:850px}.tables-exploit-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:679px){.tables-board[data-seat-count="4"],.tables-board[data-seat-count="5"],.tables-board[data-seat-count="6"]{height:auto}.tables-exploit-cards{grid-template-columns:1fr}.tables-assessment>.tables-guides{display:flex}.tables-glossary-terms{grid-template-columns:1fr;gap:4px}.tables-glossary-terms dd{margin-bottom:11px}.tables-preserved-row{align-items:stretch}.tables-preserved-row strong{flex-basis:100%}.tables-seat .tables-stack-input{height:34px;font-size:12px}.tables-stack-field label{font-size:10px}.tables-grade-components{font-size:10px}}
+
+header .tables-header-actions{flex-wrap:wrap;min-width:0;max-width:100%;row-gap:6px}
+
+#heroProfileSection,#tableWorkspaceSection,#pokerGlossary{scroll-margin-top:var(--hud-header-offset,130px)}
+
+</style>
+<style>
+.hero-profile{border:1px solid #334155;border-radius:17px;background:#0b1423;color:#e2e8f0;scroll-margin-top:110px;margin-bottom:24px}.hero-profile[hidden],.hero-profile [hidden]{display:none!important}.hero-profile__heading{cursor:pointer;padding:16px 20px;font-size:16px;font-weight:800;list-style-position:inside}.hero-profile__heading-hint{display:inline-block;margin-left:15px;font-size:11px;font-weight:500;color:#94a3b8}.hero-profile__body{padding:0 20px 20px;display:flex;flex-direction:column;gap:12px}.hero-profile__help{font-size:11px;line-height:1.6;color:#94a3b8}.hero-profile__status{font-size:12px;color:#7dd3fc;line-height:1.6}.hero-profile__status--error{color:#fda4af}.hero-profile__meta,.hero-profile__stats{display:grid;gap:12px}.hero-profile__meta{grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr))}.hero-profile__stats{grid-template-columns:repeat(5,minmax(0,1fr))}.hero-profile__field{display:flex;flex-direction:column;gap:5px;min-width:0}.hero-profile__field label,.hero-profile__label{font-size:11px;font-weight:700;color:#b6c4d6}.hero-profile input,.hero-profile textarea{min-width:0;width:100%;padding:8px 10px;border:1px solid #334155;border-radius:8px;background:#070f1d;color:#e2e8f0;font-size:12px;line-height:1.5}.hero-profile textarea{resize:vertical;font-family:ui-monospace,SFMono-Regular,monospace}.hero-profile input:focus,.hero-profile textarea:focus,.hero-profile button:focus-visible{outline:2px solid #38bdf8;outline-offset:2px}.hero-profile [aria-invalid=true]{border-color:#fb7185!important}.hero-profile__paste-wrap{display:flex;flex-direction:column;align-items:start;gap:7px;padding:12px;border:1px solid #263448;border-radius:12px;background:#080f1c}.hero-profile__actions,.hero-profile__recovery{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.hero-profile__button{padding:9px 12px;border-radius:9px;border:1px solid #334155;background:#172438;color:#dbeafe;font-size:11px;font-weight:700;line-height:16px;cursor:pointer;min-height:36px}.hero-profile__button:hover{background:#22344c}.hero-profile__button--primary{background:#075985;border-color:#0284c7;color:#e0f2fe}.hero-profile__button--danger{color:#fda4af}.hero-profile__button:disabled,.hero-profile input:disabled,.hero-profile textarea:disabled{opacity:.5;cursor:wait}.hero-profile__preview{padding:12px;border:1px solid #27425a;border-radius:11px;background:#081728;display:flex;flex-direction:column;gap:6px}.hero-profile__preview strong{font-size:13px;color:#bae6fd;overflow-wrap:anywhere}.hero-profile__flags{display:flex;gap:5px 16px;flex-wrap:wrap;font-size:11px;line-height:1.5;color:#cbd5e1;list-style:disc;padding-left:16px}.hero-profile__flags li{max-width:100%;overflow-wrap:anywhere}@media(max-width:799px){.hero-profile__stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-profile__heading-hint{display:block;margin:5px 0 0 17px}.hero-profile__meta{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-profile__meta>.hero-profile__field:first-child{grid-column:1/-1}}@media(max-width:420px){.hero-profile__heading{padding:14px}.hero-profile__body{padding:0 14px 14px}.hero-profile__actions>.hero-profile__button{width:100%}.hero-profile__stats{gap:10px}}
 
 </style>
 </head>
@@ -164,6 +178,7 @@
 <div class="family-legend" aria-label="Seven color families"><span class="family-chip" style="--family-color:#fbbf24">Yellow · Tight reg</span><span class="family-chip" style="--family-color:#f43f5e">Red · Aggro LAG reg</span><span class="family-chip" style="--family-color:#ec4899">Pink · Maniac / reactive aggro</span><span class="family-chip" style="--family-color:#10b981">Green · Hyper whale / station</span><span class="family-chip" style="--family-color:#3b82f6">Blue · Balanced / mixed reg</span><span class="family-chip" style="--family-color:#f97316">Orange · Mid-VPIP sticky / passive</span><span class="family-chip" style="--family-color:#06b6d4">Cyan · Loose pre / fit-or-fold</span></div>
       <!-- Header Actions -->
       <div class="flex items-center gap-2">
+        <a href="#heroProfileSection" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700/90 text-sky-300 border border-slate-700 text-xs font-semibold">Your stats</a>
         <a href="#tableWorkspaceSection" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700/90 text-sky-300 border border-slate-700 text-xs font-semibold">Tables</a>
         <button id="btnOpenChartModal" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 border border-slate-700 text-xs font-semibold flex items-center gap-1.5 transition">
           <i class="fa-solid fa-table-list text-sky-400"></i>
@@ -873,6 +888,7 @@
 
   <!-- APPLICATION LOGIC -->
   <script>
+
 
 
     /*************************************************************************
@@ -2681,8 +2697,10 @@
     });
   
 
+
 </script>
 <script>
+
 /* Fast, explicit player entry. The regular save/import/export controls remain intact. */
 (() => {
   'use strict';
@@ -2930,15 +2948,18 @@
   else initFastEntry();
 })();
 
-</script>
 
+</script>
 <script>
+
 /* Pure seating and selection model. Clockwise seat numbers follow action around
    the table; the score is a transparent HUD heuristic, never expected profit. */
 const PokerTablesModel = (() => {
   'use strict';
   const STAT_KEYS = ['vpip','pfr','threeBet','f3b','steal','cbet','fcbet','cr','wtsd','wsd'];
   const MAX_TABLES = 100;
+  const HERO_SEAT = 3;
+  const MIN_SEATS = 4;
   const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
   const id = () => typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
     ? crypto.randomUUID() : `table_${Date.now().toString(36)}_${Math.random().toString(36).slice(2)}`;
@@ -2948,36 +2969,70 @@ const PokerTablesModel = (() => {
     if (text.length > max) throw new Error(`Names are limited to ${max} characters.`);
     return text || fallback;
   };
+  function stackValue(value) {
+    if (value === undefined || value === null) return null;
+    if (typeof value !== 'number' || !Number.isFinite(value) || value < .1 || value > 10000 || Math.abs(value*100-Math.round(value*100))>1e-7) throw new Error('Stack size must be blank or 0.1–10,000 big blinds with at most two decimal places.');
+    return value;
+  }
   function seatValue(raw) {
     if (raw === null) return null;
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('A seat assignment is invalid.');
-    if (raw.kind === 'hero') return {kind:'hero'};
-    if (raw.kind === 'unknown') return {kind:'unknown', ...(raw.name === undefined ? {} : {name:cleanName(raw.name,120,'Unknown player')})};
-    if (raw.kind === 'player' && typeof raw.playerId === 'string' && raw.playerId.length > 0 && raw.playerId.length <= 128) return {kind:'player',playerId:raw.playerId};
+    const stackBb=stackValue(raw.stackBb);
+    if (raw.kind === 'hero') return {kind:'hero',stackBb};
+    if (raw.kind === 'unknown') return {kind:'unknown', ...(raw.name === undefined ? {} : {name:cleanName(raw.name,120,'Unknown player')}),stackBb};
+    if (raw.kind === 'player' && typeof raw.playerId === 'string' && raw.playerId.length > 0 && raw.playerId.length <= 128) return {kind:'player',playerId:raw.playerId,stackBb};
     throw new Error('Choose an open seat, yourself, an unknown opponent, or a saved player.');
   }
   function validateTable(raw) {
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('A table is invalid.');
     if (typeof raw.id !== 'string' || !raw.id || raw.id.length > 128) throw new Error('A table identifier is invalid.');
-    const seatCount = raw.seatCount;
-    if (!Number.isInteger(seatCount) || seatCount < 2 || seatCount > 9) throw new Error('A table must have 2–9 seats.');
-    if (!Array.isArray(raw.seats) || raw.seats.length !== seatCount) throw new Error('Every table must include its complete seat layout.');
-    const seats = Array.from(raw.seats,seatValue), players = new Set();
+    const originalCount = raw.seatCount;
+    // Legacy 2/3-seat layouts remain importable, but every current table includes Seat 4.
+    if (!Number.isInteger(originalCount) || originalCount < 2 || originalCount > 9) throw new Error('A table must have 4–9 seats (legacy 2/3-seat tables can be imported).');
+    if (!Array.isArray(raw.seats) || raw.seats.length !== originalCount) throw new Error('Every table must include its complete seat layout.');
+    const seats = Array.from(raw.seats,seatValue);
+    if (raw.unseated !== undefined && !Array.isArray(raw.unseated)) throw new Error('The preserved assignments list is invalid.');
+    const unseated = Array.from(raw.unseated || [],assignment=>{
+      const seat = seatValue(assignment);
+      if (!seat || seat.kind === 'hero') throw new Error('Preserved assignments must be saved or unknown opponents.');
+      return seat;
+    });
+    const players = new Set();
     let heroCount = 0;
-    for (const seat of seats) {
+    for (const seat of seats.concat(unseated)) {
       if (seat?.kind === 'hero') heroCount++;
       if (seat?.kind === 'player') {
-        if (players.has(seat.playerId)) throw new Error('The same player can be at different tables, but only once at this table.');
+        if (players.has(seat.playerId)) throw new Error('The same player can be at different tables, but only once at this table, including preserved assignments.');
         players.add(seat.playerId);
       }
     }
-    if (heroCount > 1) throw new Error('Choose only one seat for yourself at each table.');
-    if (!Number.isInteger(raw.buttonSeat) || raw.buttonSeat < 0 || raw.buttonSeat >= seatCount) throw new Error('The dealer button must point to a seat at this table.');
-    return {id:raw.id,name:cleanName(raw.name,80,'Untitled table'),seatCount,seats,buttonSeat:raw.buttonSeat,
+    if (heroCount > 1) throw new Error('Each table can include only one seat for you.');
+    if (!Number.isInteger(raw.buttonSeat) || raw.buttonSeat < 0 || raw.buttonSeat >= originalCount) throw new Error('The dealer button must point to a seat at this table.');
+    let seatCount = Math.max(MIN_SEATS,originalCount);
+    while (seats.length < seatCount) seats.push(null);
+    const oldHero = seats.findIndex(seat=>seat?.kind === 'hero');
+    if (oldHero !== HERO_SEAT) {
+      const displaced = seats[HERO_SEAT];
+      const heroAssignment = oldHero >= 0 ? seats[oldHero] : {kind:'hero',stackBb:null};
+      if (oldHero >= 0) {
+        // Swap rather than erase the opponent already in Seat 4.
+        seats[oldHero] = displaced;
+      } else if (displaced) {
+        const openSeat = seats.findIndex((seat,index)=>index!==HERO_SEAT && seat===null);
+        if (openSeat >= 0) seats[openSeat] = displaced;
+        else if (seatCount < 9) { seats.push(displaced); seatCount++; }
+        else unseated.push(displaced);
+      }
+      seats[HERO_SEAT] = heroAssignment;
+    }
+    return {id:raw.id,name:cleanName(raw.name,80,'Untitled table'),seatCount,seats,unseated,buttonSeat:raw.buttonSeat,
       updatedAt:typeof raw.updatedAt === 'string' && Number.isFinite(Date.parse(raw.updatedAt)) ? new Date(raw.updatedAt).toISOString() : new Date().toISOString()};
   }
-  function createTable(name = 'Table 1', seatCount = 6) {
-    return validateTable({id:id(),name,seatCount,seats:Array(seatCount).fill(null),buttonSeat:0,updatedAt:new Date().toISOString()});
+  function createTable(name = 'Table 1', requestedCount = 6) {
+    if (!Number.isInteger(requestedCount) || requestedCount < 2 || requestedCount > 9) throw new Error('A table must have 4–9 seats.');
+    const seatCount = Math.max(MIN_SEATS,requestedCount), seats = Array(seatCount).fill(null);
+    seats[HERO_SEAT] = {kind:'hero'};
+    return validateTable({id:id(),name,seatCount,seats,unseated:[],buttonSeat:0,updatedAt:new Date().toISOString()});
   }
   function validateWorkspace(raw) {
     if (!raw || typeof raw !== 'object' || Array.isArray(raw) || raw.version !== 1 || !Array.isArray(raw.tables)) throw new Error('This is not a supported table workspace.');
@@ -2994,22 +3049,40 @@ const PokerTablesModel = (() => {
   function setSeat(raw, seatIndex, assignment) {
     const table = validateTable(raw);
     if (!Number.isInteger(seatIndex) || seatIndex < 0 || seatIndex >= table.seatCount) throw new Error('Choose a valid seat.');
-    const seats = table.seats.slice(); seats[seatIndex] = seatValue(assignment);
+    const seat = seatValue(assignment), previous=table.seats[seatIndex];
+    const sameIdentity=seat&&previous&&seat.kind===previous.kind&&(seat.kind==='hero'||(seat.kind==='player'&&seat.playerId===previous.playerId)||(seat.kind==='unknown'&&(seat.name||'Unknown player')===(previous.name||'Unknown player')));
+    if (sameIdentity && !Object.prototype.hasOwnProperty.call(assignment,'stackBb')) seat.stackBb=previous.stackBb;
+    if (seatIndex === HERO_SEAT && seat?.kind !== 'hero') throw new Error('Seat 4 is always reserved for you and cannot be cleared or replaced.');
+    if (seatIndex !== HERO_SEAT && seat?.kind === 'hero') throw new Error('Your seat is fixed at Seat 4.');
+    const seats = table.seats.slice(); seats[seatIndex] = seat;
     return validateTable({...table,seats,updatedAt:new Date().toISOString()});
+  }
+  function setStack(raw, seatIndex, value) {
+    const table=validateTable(raw);
+    if (!Number.isInteger(seatIndex) || seatIndex < 0 || seatIndex >= table.seatCount) throw new Error('Choose a valid seat.');
+    if (!table.seats[seatIndex]) throw new Error('Assign a player before entering a stack for this seat.');
+    const stackBb=stackValue(value);
+    return setSeat(table,seatIndex,{...table.seats[seatIndex],stackBb});
   }
   function moveHero(raw, seatIndex) {
     const table = validateTable(raw);
-    if (!Number.isInteger(seatIndex) || seatIndex < 0 || seatIndex >= table.seatCount) throw new Error('Choose a valid seat.');
-    const seats = table.seats.map(seat=>seat?.kind === 'hero' ? null : seat);
-    // The UI must confirm before replacing a seated opponent.
-    seats[seatIndex] = {kind:'hero'};
-    return validateTable({...table,seats,updatedAt:new Date().toISOString()});
+    if (seatIndex !== HERO_SEAT) throw new Error('Your seat is fixed at Seat 4.');
+    return table;
   }
   function resizeTable(raw, count) {
     const table = validateTable(raw);
-    if (!Number.isInteger(count) || count < 2 || count > 9) throw new Error('A table must have 2–9 seats.');
+    if (!Number.isInteger(count) || count < MIN_SEATS || count > 9) throw new Error('A table must have 4–9 seats so your seat remains Seat 4.');
     if (count < table.seatCount && table.seats.slice(count).some(Boolean)) throw new Error('Clear the seats being removed before shrinking this table.');
     return validateTable({...table,seatCount:count,seats:Array.from({length:count},(_,i)=>table.seats[i] ?? null),buttonSeat:Math.min(table.buttonSeat,count-1),updatedAt:new Date().toISOString()});
+  }
+  function seatUnseated(raw, preservedIndex, seatIndex) {
+    const table = validateTable(raw);
+    if (!Number.isInteger(preservedIndex) || preservedIndex < 0 || preservedIndex >= table.unseated.length) throw new Error('Choose a preserved assignment.');
+    if (!Number.isInteger(seatIndex) || seatIndex < 0 || seatIndex >= table.seatCount || seatIndex === HERO_SEAT) throw new Error('Choose an open opponent seat; Seat 4 is always yours.');
+    if (table.seats[seatIndex]) throw new Error('Choose an open seat to preserve the current occupant.');
+    const unseated=table.unseated.slice(), seats=table.seats.slice();
+    seats[seatIndex]=unseated.splice(preservedIndex,1)[0];
+    return validateTable({...table,seats,unseated,updatedAt:new Date().toISOString()});
   }
   const occupied = table => table.seats.flatMap((seat,index)=>seat ? [index] : []);
   function actionOrder(table, buttonSeat) {
@@ -3049,7 +3122,7 @@ const PokerTablesModel = (() => {
     const stats=player.stats || {}, keys=Array.isArray(player.knownStats)?player.knownStats:STAT_KEYS;
     const known=new Set(keys.filter(key=>STAT_KEYS.includes(key)&&Number.isFinite(stats[key])&&stats[key]>=0&&stats[key]<=100));
     const has=(...names)=>names.every(key=>known.has(key)), gap=has('vpip','pfr')?stats.vpip-stats.pfr:0;
-    if (!has('vpip','pfr') || stats.pfr>stats.vpip) return {known:false,opportunity:0,pressure:0,reliability:0,flags:[],knownStats:[...known]};
+    if (!has('vpip','pfr') || stats.pfr>stats.vpip) return {known:false,opportunity:0,pressure:0,reliability:0,flags:[],knownStats:[...known],stats};
     let opportunity=0,pressure=0;
     const flags=[];
     if(stats.vpip>=50){opportunity+=7;flags.push('hyper-wide preflop range');}
@@ -3077,73 +3150,313 @@ const PokerTablesModel = (() => {
     return {known:true,opportunity:clamp(opportunity,0,12),pressure:clamp(pressure,0,8),reliability,flags,knownStats:[...known],
       limited:known.size<8||actualHands<500,stats,gap};
   }
+  const GRADE_THRESHOLDS = [{grade:'A',min:85},{grade:'B',min:70},{grade:'C',min:50},{grade:'D',min:35},{grade:'E',min:0}];
+  const gradeForScore = score => score === null ? null : GRADE_THRESHOLDS.find(band=>score>=band.min).grade;
+  function stackEffect(effective, opportunity, pressure) {
+    if (effective === null) return 0;
+    // At shallow effective stacks fewer speculative/implied-odds opportunities
+    // are realizable. Deep stacks increase both value access and pressure risk.
+    if (effective < 40) return clamp(-(effective < 20 ? .4 : .25)*opportunity + .1*pressure,-2,2);
+    if (effective > 150) return clamp(.1*opportunity-.25*pressure,-2,2);
+    return 0;
+  }
+  function exploitCard(opponent) {
+    const observedGiveaways=[],preflop=[],postflop=[],river=[],cautions=[];
+    const keys=new Set(opponent.knownStats||[]),stats=opponent.stats||{};
+    const has=(...names)=>names.every(key=>keys.has(key)&&Number.isFinite(stats[key]));
+    if (has('vpip','pfr')) observedGiveaways.push(`VPIP/PFR ${stats.vpip}/${stats.pfr} · ${stats.vpip-stats.pfr}-point gap`);
+    if (has('threeBet')) observedGiveaways.push(`3-bet ${stats.threeBet}%`);
+    if (has('fcbet')) observedGiveaways.push(`Fold to flop c-bet ${stats.fcbet}%`);
+    if (has('cr')) observedGiveaways.push(`Check-raise ${stats.cr}%`);
+    if (has('wtsd','wsd')) observedGiveaways.push(`WTSD ${stats.wtsd}% · W$SD ${stats.wsd}% (not river bluff frequency)`);
+    if (!opponent.known) {
+      preflop.push('No observed VPIP/PFR profile. Use sound positional ranges; do not assume this opponent is weak.');
+      postflop.push('Collect observed fold and aggression opportunities before choosing an exploit.');
+      cautions.push('Unknown or missing player data contributes no favorable lineup signal.');
+    } else {
+      if (opponent.flags.includes('large passive preflop gap')) preflop.push('Favor playable value hands when isolating their passive entries; account for aggressive players behind.');
+      else if (opponent.pressure >= 2) preflop.push('Defend deliberately against their observed pressure; use position, sizing and fold-to-3-bet evidence for calls or reraises.');
+      else preflop.push('Use positional ranges and target demonstrated folds, rather than assuming a color guarantees an exploit.');
+      if (opponent.flags.includes('frequent folds to 3-bets')) preflop.push('Their frequent folds to 3-bets can support selective blocker bluffs when position and sizing fit.');
+      if (opponent.flags.includes('sticky showdown calls')) postflop.push('Their observed sticky calls favor value over low-equity bluffs; size to the actual calling range.');
+      else if (opponent.flags.includes('frequent flop folds')) postflop.push('Consider small flop bets on suitable boards against observed folds; reassess after a call.');
+      else postflop.push('No specific fold-frequency exploit is established. Choose bets by board, range advantage and sizing.');
+      if (opponent.flags.includes('reactive check-raises')) postflop.push('Protect your checks and review check-raise sizing; high check-raise frequency does not mean every raise is a bluff.');
+      if (opponent.flags.includes('high flop c-bet')) postflop.push('High flop c-bet frequency does not establish turn or river barrels; separate later-street evidence.');
+      if (opponent.limited) cautions.push('Partial stats or limited actual hand counts make these tendencies provisional.');
+    }
+    if (opponent.positionShare !== null) cautions.push(opponent.positionShare > .5 ? 'You act after this opponent on most button rotations; use that access selectively.' : opponent.positionShare < .5 ? 'This opponent acts after you on most button rotations; reduce marginal out-of-position battles.' : 'Position is balanced over a full button rotation.');
+    if (opponent.effectiveStackBb === null) cautions.push('Effective stack is unknown; no 100-BB assumption or stack-based grade adjustment was made.');
+    else if (opponent.effectiveStackBb < 40) {
+      preflop.push(`At ${opponent.effectiveStackBb} BB effective, simplify speculative calls; do not set-mine or chase draws without adequate price and implied odds.`);
+      cautions.push('Shallow effective stacks reduce maneuvering room; strong one-pair hands still require range and sizing context.');
+    } else if (opponent.effectiveStackBb > 150) {
+      postflop.push(`At ${opponent.effectiveStackBb} BB effective, manage pot size with non-nut hands and respect position; extra depth increases both value potential and costly mistakes.`);
+      cautions.push('Deep stacks do not justify automatic top-pair stack-offs or paying large raises without line evidence.');
+    }
+    river.push('Use actual lines, sizing, blockers and runout. Aggregate W$SD or flop aggression cannot identify an exact river bluff frequency.');
+    return {seatIndex:opponent.seatIndex,playerId:opponent.playerId,name:opponent.name,colorKey:opponent.colorKey,known:opponent.known,
+      provisional:!opponent.known||opponent.limited||opponent.effectiveStackBb===null,opportunity:opponent.opportunity,
+      stackBb:opponent.stackBb,effectiveStackBb:opponent.effectiveStackBb,positionShare:opponent.positionShare,
+      observedGiveaways,preflop,postflop,river,cautions};
+  }
   function scoreTable(raw, players = new Map()) {
-    const table=validateTable(raw), heroIndex=table.seats.findIndex(seat=>seat?.kind==='hero');
-    const positions=currentPositions(table,players), taken=occupied(table), opponents=[];
+    const table=validateTable(raw),heroIndex=HERO_SEAT,heroStackBb=table.seats[HERO_SEAT].stackBb;
+    const positions=currentPositions(table,players),taken=occupied(table),opponents=[];
     const reasons=[],preflop=[],postflop=[],river=[];
-    let knownCount=0,total=0,weightSum=0,contributionSum=0,limitedCount=0;
+    let knownCount=0,total=0,weightSum=0,limitedCount=0,unknownStackCount=0;
+    let lineupRaw=0,positionRaw=0,stackRaw=0,sampleRaw=0;
     table.seats.forEach((seat,seatIndex)=>{
       if(!seat||seat.kind==='hero')return;
       total++;
       const player=seat.kind==='player'?lookup(players,seat.playerId):undefined;
-      const signal=playerSignals(player),share=heroIndex<0?null:positionShare(table,heroIndex,seatIndex);
+      const signal=playerSignals(player),share=positionShare(table,heroIndex,seatIndex);
       const name=player?.playerName||seat.name||(seat.kind==='player'?'Missing player':'Unknown player');
-      const access=share===null?1:.6+.8*share;
-      const pressureCost=share===null?1:.6+.8*(1-share);
-      const contribution=signal.known?(signal.opportunity*access-signal.pressure*pressureCost)*signal.reliability:0;
-      if(signal.known){knownCount++;weightSum+=signal.reliability;contributionSum+=contribution;if(signal.limited)limitedCount++;}
+      const access=.6+.8*share,pressureCost=.6+.8*(1-share);
+      const stackBb=seat.stackBb,effectiveStackBb=heroStackBb===null||stackBb===null?null:Math.min(heroStackBb,stackBb);
+      if (effectiveStackBb===null) unknownStackCount++;
+      const baseline=signal.known?signal.opportunity-signal.pressure:0;
+      const positioned=signal.known?signal.opportunity*access-signal.pressure*pressureCost:0;
+      const stackAdjustment=signal.known?stackEffect(effectiveStackBb,signal.opportunity*access,signal.pressure*pressureCost):0;
+      const contribution=(positioned+stackAdjustment)*signal.reliability;
+      lineupRaw+=baseline;positionRaw+=positioned-baseline;stackRaw+=stackAdjustment;
+      sampleRaw+=(positioned+stackAdjustment)*(signal.reliability-1);
+      if(signal.known){knownCount++;weightSum+=signal.reliability;if(signal.limited)limitedCount++;}
       let family=player?.classification?.colorKey;
       if(!family&&player&&typeof classifyPlayer==='function') {try {family=classifyPlayer(player.stats,player.knownStats).colorKey;}catch{}}
       opponents.push({seatIndex,playerId:seat.kind==='player'?seat.playerId:null,name,kind:seat.kind,known:signal.known,
         positionShare:share,opportunity:signal.opportunity,pressure:signal.pressure,reliability:signal.reliability,contribution,
-        flags:signal.flags,colorKey:family||null,limited:signal.limited!==false,stats:signal.known?signal.stats:null});
+        flags:signal.flags,colorKey:family||null,limited:signal.limited!==false,stats:signal.stats||null,
+        knownStats:signal.knownStats,stackBb,effectiveStackBb,stackAdjustment,stackScoreImpact:0});
     });
     const coverage={known:knownCount,total,unknown:total-knownCount,ratio:total?knownCount/total:0};
-    const threshold=table.seatCount===2?1:2;
-    const canGrade=heroIndex>=0&&knownCount>=threshold;
-    const provisional=!canGrade||coverage.unknown>0||limitedCount>0;
-    // Unknown occupied seats stay in the denominator so they never inflate a score.
-    const score=canGrade?Math.round(clamp(50+5*contributionSum/Math.max(total,1),0,100)):null;
-    const grade=score===null?null:score>=85?'A':score>=70?'B':score>=50?'C':score>=35?'D':'E';
-    const confidence=!canGrade?'Not enough evidence':provisional?'Provisional · incomplete or limited evidence':'Observed lineup · heuristic';
-    if(heroIndex<0)reasons.push('Choose your seat to evaluate access to weaker ranges and pressure from players on your left.');
-    else if(knownCount<threshold)reasons.push(`Add observed VPIP and PFR for ${threshold===1?'the opponent':`at least ${threshold} opponents`} before grading. Empty saved profiles and missing players count as unknown.`);
-    if(coverage.unknown)reasons.push(`${coverage.unknown} occupied opponent seat${coverage.unknown===1?' is':'s are'} unknown or lack observed VPIP/PFR; no favorable score is assumed.`);
-    if(limitedCount)reasons.push(`${limitedCount} observed profile${limitedCount===1?' has':'s have'} partial HUD data or limited actual hand counts; the grade is provisional.`);
-    const strongestTarget=opponents.filter(p=>p.known&&p.opportunity>=3).sort((a,b)=>b.opportunity*b.reliability-a.opportunity*a.reliability)[0];
-    const pressureThreat=opponents.filter(p=>p.known&&p.pressure>=2).sort((a,b)=>b.pressure*(1-(b.positionShare??.5))*b.reliability-a.pressure*(1-(a.positionShare??.5))*a.reliability)[0];
-    if(strongestTarget&&heroIndex>=0){
-      const placement=strongestTarget.positionShare>.5?'You act after them on most button rotations':strongestTarget.positionShare<.5?'They act after you on most button rotations':'Position is balanced across button rotations';
-      reasons.push(`${strongestTarget.name}: ${strongestTarget.flags.slice(0,2).join(' + ')}. ${placement}; favor direct position rather than just counting weak colors.`);
-      preflop.push(`Seek playable value hands in position against ${strongestTarget.name}; isolate only when stack depth, sizing and players behind allow it.`);
-      if(strongestTarget.flags.includes('sticky showdown calls'))postflop.push(`Against ${strongestTarget.name}'s observed sticky calls, reduce low-equity bluffs and size value to their calling range.`);
-      else if(strongestTarget.flags.includes('frequent flop folds'))postflop.push(`Against ${strongestTarget.name}'s frequent flop folds, consider small bets on suitable boards; reassess when they continue.`);
-      else postflop.push(`Use ${strongestTarget.name}'s actual fold and aggression stats before choosing value sizing or bluffs; a wide preflop range does not guarantee river calls.`);
+    const threshold=taken.length===2?1:2,canGrade=knownCount>=threshold;
+    const provisional=!canGrade||coverage.unknown>0||limitedCount>0||unknownStackCount>0;
+    // Unknown occupied seats stay in the denominator; unknown stats/stacks receive no bonus.
+    const factor=5/Math.max(total,1),lineup=lineupRaw*factor,position=positionRaw*factor,stack=stackRaw*factor,sample=sampleRaw*factor;
+    const rawScore=50+lineup+position+stack+sample,clampedScore=clamp(rawScore,0,100);
+    const score=canGrade?Math.round(clampedScore):null,grade=gradeForScore(score);
+    opponents.forEach(opponent=>opponent.stackScoreImpact=opponent.stackAdjustment*opponent.reliability*factor);
+    const gradeBreakdown={base:50,lineup,position,stack,sample,clamp:clampedScore-rawScore,rounding:score===null?0:score-clampedScore,
+      rawScore,score,thresholds:GRADE_THRESHOLDS.map(band=>({...band})),formula:'50 + lineup + position + effective stack + evidence damping, then clamp to 0–100 and round. Unknown occupied seats remain in the averaging denominator.'};
+    const confidence=!canGrade?'Not enough evidence':provisional?'Provisional · unknown stacks or limited HUD evidence':'Observed lineup and stacks · heuristic';
+    if(!canGrade)reasons.push(`Add observed VPIP and PFR for ${threshold===1?'the opponent':`at least ${threshold} opponents`} before grading. Empty saved profiles and missing players count as unknown.`);
+    else reasons.push(`${grade} (${score}/100): base 50 + lineup ${lineup.toFixed(1)} + position ${position.toFixed(1)} + stack ${stack.toFixed(1)} + evidence damping ${sample.toFixed(1)}, then clamp/round. Bands: A ≥85, B ≥70, C ≥50, D ≥35, E <35. These are rubric points, not expected profit.`);
+    if(coverage.unknown)reasons.push(`${coverage.unknown} occupied opponent seat${coverage.unknown===1?' is':'s are'} unknown or lack observed VPIP/PFR; no favorable signal is assumed.`);
+    if(limitedCount)reasons.push(`${limitedCount} observed profile${limitedCount===1?' has':'s have'} partial HUD data or limited actual hand counts; evidence damping reduces both favorable and unfavorable signals.`);
+    if(unknownStackCount)reasons.push(`${unknownStackCount} effective stack${unknownStackCount===1?' is':'s are'} unknown. Enter your stack at Seat 4 and each opponent's stack in BB; missing stacks are neutral and keep the grade provisional.`);
+    if(table.unseated.length)reasons.push(`${table.unseated.length} preserved assignment${table.unseated.length===1?' is':'s are'} not seated and excluded from the grade. Reassign them to open seats when appropriate.`);
+    const strongestTarget=opponents.filter(opponent=>opponent.known&&opponent.opportunity>=3).sort((a,b)=>b.opportunity*b.reliability-a.opportunity*a.reliability)[0];
+    const pressureThreat=opponents.filter(opponent=>opponent.known&&opponent.pressure>=2).sort((a,b)=>b.pressure*(1-b.positionShare)*b.reliability-a.pressure*(1-a.positionShare)*a.reliability)[0];
+    if(strongestTarget){
+      reasons.push(`${strongestTarget.name}: ${strongestTarget.flags.slice(0,2).join(' + ')}. ${strongestTarget.positionShare>.5?'You act after them on most button rotations':strongestTarget.positionShare<.5?'They act after you on most button rotations':'Position is balanced over button rotations'}; direct position matters as well as lineup composition.`);
+      preflop.push(`Seek playable value hands in position against ${strongestTarget.name}; isolate only when effective stacks, sizing and players behind allow it.`);
+      if(strongestTarget.flags.includes('sticky showdown calls'))postflop.push(`Against ${strongestTarget.name}'s observed sticky calls, reduce low-equity bluffs and size value to the calling range.`);
+      else if(strongestTarget.flags.includes('frequent flop folds'))postflop.push(`Against ${strongestTarget.name}'s observed flop folds, consider small bets on suitable boards; reassess when they continue.`);
+      else postflop.push(`Use ${strongestTarget.name}'s actual fold and aggression stats before choosing bluffs or value sizing.`);
     }
-    if(pressureThreat&&heroIndex>=0){
-      const side=pressureThreat.positionShare<.5?'often acts after you':'is more often before you';
-      reasons.push(`${pressureThreat.name} ${side} and shows ${pressureThreat.flags.filter(f=>/pressure|initiative|steals|raises/.test(f)).slice(0,2).join(' / ')||'aggression'}. ${pressureThreat.positionShare<.5?'This reduces seat quality.':'Your position helps contain the pressure.'}`);
+    if(pressureThreat){
+      reasons.push(`${pressureThreat.name} ${pressureThreat.positionShare<.5?'often acts after you':'is more often before you'} and shows ${pressureThreat.flags.filter(flag=>/pressure|initiative|steals|raises/.test(flag)).slice(0,2).join(' / ')||'aggression'}. ${pressureThreat.positionShare<.5?'This reduces seat quality.':'Your position helps contain the pressure.'}`);
       preflop.push(`Account for ${pressureThreat.name} behind you before light isolation or steals; avoid automatically widening into frequent 3-bets.`);
-      postflop.push(`Keep strong hands in your checking range versus ${pressureThreat.name}; bluff-catch selectively using sizing and runout evidence.`);
+      postflop.push(`Keep strong hands in checking ranges versus ${pressureThreat.name}; bluff-catch selectively using sizing and runout evidence.`);
     }
-    const heroPosition=positions.find(p=>p.hero);
+    const heroPosition=positions.find(position=>position.hero);
     if(heroPosition&&taken.length>=2){
-      preflop.unshift(`Current hand: you are ${heroPosition.label}. ${taken.length===2?'Heads-up: the button is the small blind and acts first preflop; the big blind acts first postflop.':'The seat grade averages a full button orbit; the current button changes this hand’s action order.'}`);
-      if(heroPosition.buttonAdjusted)reasons.push('The button points at an open seat; current positions use the next occupied seat until you place the button on a player.');
+      preflop.unshift(`Current hand: you are ${heroPosition.label} at Seat 4. ${taken.length===2?'Heads-up: the button is the small blind and acts first preflop; the big blind acts first postflop.':'The seat grade averages a full button orbit; the current button changes this hand’s action order.'}`);
+      if(heroPosition.buttonAdjusted)reasons.push('The button points at an open seat; current positions use the next occupied seat until the button is placed on a player.');
     }
-    if(!preflop.length)preflop.push('Assign your seat and observed opponents first. Until then, use a sound positional strategy rather than a lineup-specific adjustment.');
-    if(!postflop.length)postflop.push('Choose bets by board texture, range advantage and observed fold/aggression opportunities. Unknown players receive no assumed leaks.');
-    river.push('Use each player’s observed lines, sizing and blockers. Flop aggression and W$SD do not establish river bluff frequency.');
+    if(!preflop.length)preflop.push('Add observed opponents before using lineup-specific adjustments. Your seat is fixed at Seat 4.');
+    if(!postflop.length)postflop.push('Choose bets by board texture, ranges, sizing and observed opportunities. Unknown players receive no assumed leaks.');
+    river.push('Use observed lines, sizing, blockers and runout. Flop aggression or W$SD cannot establish an exact river bluff frequency.');
     if(table.seatCount>6)reasons.push('Archetype labels were designed for 6-max; full-ring opening ranges and positional adjustments differ.');
-    reasons.push('Grade is a HUD-based seat-selection aid, not a win-rate estimate. Stakes, rake, stacks, format, your skill and relevant stat opportunities are not modeled.');
-    return {score,grade,provisional,confidence,coverage,reasons,guides:{preflop,postflop,river},positions,opponents,heroIndex,
-      model:'orbit-position-v1',sampleWeight:knownCount?weightSum/knownCount:0};
+    reasons.push('Grade is a HUD-and-effective-stack seat-selection aid, not a win-rate estimate. Stakes, rake, your skill and relevant stat opportunities are not modeled. Your own HUD personalizes the guide without assigning a skill score.');
+    return {score,grade,provisional,confidence,coverage,reasons,guides:{preflop,postflop,river},positions,opponents,heroIndex,heroStackBb,gradeBreakdown,
+      exploitSheet:opponents.map(exploitCard),model:'orbit-position-stack-v2',sampleWeight:knownCount?weightSum/knownCount:0};
   }
-  return {MAX_TABLES,STAT_KEYS,createTable,validateTable,validateWorkspace,setSeat,moveHero,resizeTable,positionShare,currentPositions,playerSignals,scoreTable};
+  return {MAX_TABLES,MIN_SEATS,HERO_SEAT,STAT_KEYS,createTable,validateTable,validateWorkspace,setSeat,moveHero,resizeTable,seatUnseated,setStack,positionShare,currentPositions,playerSignals,scoreTable,gradeForScore};
+})();
+
+
+</script>
+<script>
+/* Hero is an optional personal HUD, never a player-database opponent or skill score. */
+const PokerHeroModel = (() => {
+  'use strict';
+  const KEYS = ['vpip','pfr','threeBet','f3b','steal','cbet','fcbet','cr','wtsd','wsd'];
+  const LABELS = ['VPIP','PFR','3B','F3B','STL','CB','FCB','XR','WTSD','W$SD'];
+  function empty() {
+    return {version:1,revision:null,playerName:'You',stats:Object.fromEntries(KEYS.map(key=>[key,0])),knownStats:[],hands:null,showdowns:null};
+  }
+  function validate(raw) {
+    if (!raw || typeof raw!=='object' || Array.isArray(raw) || raw.version!==1) throw new Error('This is not a supported Hero profile.');
+    const name=raw.playerName===undefined?'You':raw.playerName;
+    if (typeof name!=='string') throw new Error('Your player name must be text.');
+    const playerName=name.trim().replace(/\s+/g,' ')||'You';
+    if (playerName.length>120) throw new Error('Your player name is limited to 120 characters.');
+    if (!raw.stats || typeof raw.stats!=='object' || Array.isArray(raw.stats)) throw new Error('Your HUD stats must be an object.');
+    const stats={};
+    KEYS.forEach((key,index)=>{
+      const value=raw.stats[key];
+      if (!Number.isInteger(value) || value<0 || value>100) throw new Error(`${LABELS[index]} must be a whole percentage from 0 to 100.`);
+      stats[key]=value;
+    });
+    if (!Array.isArray(raw.knownStats) || raw.knownStats.some(key=>typeof key!=='string'||!KEYS.includes(key))) throw new Error('Your observed-stat metadata is invalid.');
+    const knownStats=KEYS.filter(key=>raw.knownStats.includes(key));
+    if (knownStats.includes('vpip') && knownStats.includes('pfr') && stats.pfr>stats.vpip) throw new Error('Your PFR cannot exceed your VPIP. Check the HUD order.');
+    const hands=raw.hands===undefined?null:raw.hands,showdowns=raw.showdowns===undefined?null:raw.showdowns;
+    if (hands!==null && (!Number.isInteger(hands)||hands<1||hands>500000)) throw new Error('Your hand count must be blank or a whole number from 1 to 500,000.');
+    if (showdowns!==null && (!Number.isInteger(showdowns)||showdowns<0||showdowns>300000)) throw new Error('Your showdown count must be blank or a whole number from 0 to 300,000.');
+    const revision=raw.revision===undefined?null:raw.revision;
+    if (revision!==null && (typeof revision!=='string'||!revision||revision.length>128)) throw new Error('Your saved Hero revision is invalid.');
+    return {version:1,revision,playerName,stats,knownStats,hands,showdowns};
+  }
+  function parseHud(text, existing) {
+    const profile=validate(existing||empty());
+    if (typeof text!=='string' || text.length>2000) throw new Error('Paste up to 2,000 characters of HUD percentages.');
+    const raw=text.trim();
+    if (!/^\d+%?(?:(?:\s*[,;/|]\s*|\s+)\d+%?)*$/.test(raw)) throw new Error('Nothing changed. Paste exactly 3 or 10 whole percentages, separated by spaces, commas, or slashes.');
+    const values=raw.split(/\s*[,;/|]\s*|\s+/).map(token=>Number(token.replace(/%$/,'')));
+    if (values.length!==3 && values.length!==10) throw new Error('Nothing changed. Use 3 values (VPIP/PFR/3B) or all 10 in the displayed HUD order.');
+    if (values.some(value=>!Number.isSafeInteger(value)||value<0||value>100)) throw new Error('Nothing changed. Every HUD value must be a whole percentage from 0 to 100.');
+    const stats={...profile.stats},known=new Set(profile.knownStats);
+    values.forEach((value,index)=>{stats[KEYS[index]]=value;known.add(KEYS[index]);});
+    return validate({...profile,stats,knownStats:KEYS.filter(key=>known.has(key))});
+  }
+  function summary(raw) {
+    const profile=validate(raw||empty()),s=profile.stats,known=new Set(profile.knownStats);
+    const has=(...keys)=>keys.every(key=>known.has(key));
+    const flags=[],preflop=[],postflop=[],river=[];
+    const gap=has('vpip','pfr')?s.vpip-s.pfr:null;
+    if (gap!==null && gap>=12) {
+      flags.push(`Wide VPIP–PFR gap: ${gap} points`);
+      preflop.push(`Your ${s.vpip}/${s.pfr} HUD has a ${gap}-point gap. Review marginal limps and calls, especially with aggressive players behind; the gap is not an exact cold-call frequency.`);
+    }
+    if (has('f3b') && s.f3b>=60) {
+      flags.push(`Frequent fold to 3-bet: ${s.f3b}%`);
+      preflop.unshift(`Your ${s.f3b}% fold-to-3-bet is a review point against pressure. Check opening positions, raise sizes and relevant opportunities before changing defenses.`);
+    }
+    if (has('steal') && s.steal>=46) {
+      flags.push(`Wide stealing frequency: ${s.steal}%`);
+      preflop.push(`Your ${s.steal}% steal rate makes the players behind you relevant. Choose positions and sizing carefully instead of assuming every open seat is profitable.`);
+    }
+    if (has('threeBet') && s.threeBet>=14) {
+      flags.push(`High 3-bet frequency: ${s.threeBet}%`);
+      preflop.push(`Your ${s.threeBet}% 3-bet frequency needs position and sizing context; high aggression alone is not a leak or evidence of skill.`);
+    }
+    if (has('fcbet') && s.fcbet>=56) {
+      flags.push(`Frequent flop folds: ${s.fcbet}%`);
+      postflop.push(`Your ${s.fcbet}% fold-to-c-bet suggests reviewing flop defenses by board and sizing. Do not respond with an automatic call-more rule.`);
+    } else if (has('fcbet') && s.fcbet<=38) {
+      flags.push(`Sticky flop defense: ${s.fcbet}% FCB`);
+      postflop.push(`Your low ${s.fcbet}% fold-to-c-bet makes continuing-hand quality worth reviewing. Check equity, position and sizing rather than calling solely to protect a frequency.`);
+    }
+    if (has('cbet') && s.cbet>=78) {
+      flags.push(`High flop c-bet: ${s.cbet}%`);
+      postflop.push(`Your ${s.cbet}% flop c-bet rate is a cue to check board coverage and bet sizing. It does not establish turn or river barrel frequency.`);
+    }
+    if (has('cr') && s.cr>=12) {
+      flags.push(`Frequent check-raise: ${s.cr}%`);
+      postflop.push(`Your ${s.cr}% check-raise frequency needs suitable value and draw combinations. Consider the opponent's range and sizing before adding raises.`);
+    }
+    if (has('wtsd','wsd') && s.wtsd>=33 && s.wsd<=46) {
+      flags.push(`Showdown review: ${s.wtsd}% WTSD / ${s.wsd}% W$SD`);
+      river.push(`Your ${s.wtsd}% WTSD / ${s.wsd}% W$SD is a hand-review prompt, not proof of river overcalling or losing play. Inspect actual lines and sample sizes before changing bluff-catching.`);
+    }
+    if (profile.hands!==null && profile.showdowns!==null && profile.showdowns>profile.hands) flags.push('Check sample counts: showdowns exceed entered total hands');
+    if (!flags.length && known.size) flags.push('No extreme entered frequencies flagged; this is not a skill rating');
+    let classification=null;
+    if (has('vpip','pfr') && typeof classifyPlayer==='function') classification=classifyPlayer(s,profile.knownStats);
+    const sampleText=[profile.hands===null?'Hands not entered':`${profile.hands.toLocaleString()} entered hands`,profile.showdowns===null?'Showdowns not entered':`${profile.showdowns.toLocaleString()} entered showdowns`].join(' · ');
+    return {playerName:profile.playerName,classification,flags,guides:{preflop,postflop,river},knownCount:known.size,
+      label:classification?.subBadge||(has('vpip','pfr')?'Observed Hero HUD':'Enter VPIP and PFR for a Hero profile'),sampleText,
+      provisional:known.size<10||profile.hands===null||profile.hands<500};
+  }
+  function adaptAssessment(result, rawHero) {
+    const output={...result,guides:{preflop:[...(result.guides?.preflop||[])],postflop:[...(result.guides?.postflop||[])],river:[...(result.guides?.river||[])]},heroSummary:null};
+    if (!rawHero) return output;
+    const hero=validate(rawHero),personal=summary(hero);output.heroSummary=personal;
+    if (result.heroIndex<0 || !personal.knownCount) return output;
+    const known=new Set(hero.knownStats),s=hero.stats;
+    const opponents=Array.isArray(result.opponents)?result.opponents:[];
+    const pressure=opponents.filter(p=>p.known&&p.pressure>=2&&(p.positionShare??.5)<.5).sort((a,b)=>b.pressure-a.pressure)[0];
+    const frequentCb=opponents.find(p=>p.known&&Array.isArray(p.flags)&&p.flags.includes('high flop c-bet'));
+    let preflop=personal.guides.preflop[0];
+    if (pressure&&known.has('f3b')&&s.f3b>=60) preflop=`Your stats: F3B ${s.f3b}% meets ${pressure.name}'s pressure from a seat that often acts after you. Review opening and defense choices by position and sizing; this does not mean calling every 3-bet.`;
+    else if (pressure&&known.has('vpip')&&known.has('pfr')&&s.vpip-s.pfr>=12) preflop=`Your stats: the ${s.vpip-s.pfr}-point VPIP–PFR gap is worth reviewing with ${pressure.name} often acting after you. Avoid adding marginal passive calls just because another opponent looks loose.`;
+    if (preflop) output.guides.preflop.push(preflop.startsWith('Your stats:')?preflop:'Your stats: '+preflop);
+    let postflop=personal.guides.postflop[0];
+    if (frequentCb&&known.has('fcbet')&&s.fcbet>=56) postflop=`Your stats: FCB ${s.fcbet}% and ${frequentCb.name}'s observed high flop c-bet make board-specific defense review relevant. Use range, equity and sizing rather than automatically calling more.`;
+    if (postflop) output.guides.postflop.push(postflop.startsWith('Your stats:')?postflop:'Your stats: '+postflop);
+    if (personal.guides.river[0]) output.guides.river.push('Your stats: '+personal.guides.river[0]);
+    return output;
+  }
+  return {KEYS,LABELS,empty,validate,parseHud,summary,adaptAssessment};
 })();
 
 </script>
 <script>
+/* Hero is a separate metadata profile, never an opponent record. Clear retains
+   a revision tombstone so stale tabs cannot silently resurrect cleared stats. */
+const PokerHeroStore = (() => {
+  'use strict';
+  const KEY = 'heroProfileV1';
+  const channel = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('hud_edge_hero_profile_v1') : null;
+  let cached = null, generation = 0;
+  const copy = value => value ? JSON.parse(JSON.stringify(value)) : null;
+  const emit = (profile, source) => window.dispatchEvent(new CustomEvent('poker-hero-updated',{detail:{profile:copy(profile),source}}));
+  async function readSnapshot() {
+    const db = await openPlayerDatabase();
+    const raw = await readDatabaseStore(db,'meta',KEY);
+    return raw === undefined ? PokerHeroModel.empty() : PokerHeroModel.validate(raw);
+  }
+  async function load(source = 'load') {
+    const request = ++generation;
+    const profile = await readSnapshot();
+    if (request === generation) { cached = profile; emit(profile,source); }
+    return copy(cached || profile);
+  }
+  const conflict = () => new Error('Your saved stats changed in another tab. Your draft was kept. Reload saved Hero stats before trying again.');
+  async function write(raw, expectedRevision, source) {
+    const profile = PokerHeroModel.validate(raw);
+    const expected = expectedRevision === undefined ? profile.revision : expectedRevision;
+    if (expected !== null && typeof expected !== 'string') throw new Error('The saved Hero revision is invalid. Reload before saving.');
+    const saved = {...profile,revision:newPlayerId()};
+    ++generation;
+    const db = await openPlayerDatabase();
+    await new Promise((resolve,reject)=>{
+      const tx=db.transaction('meta','readwrite'),store=tx.objectStore('meta');
+      let failure;
+      const request=store.get(KEY);
+      request.onsuccess=()=>{
+        if ((request.result === undefined ? null : request.result.revision)!==expected) {failure=conflict();tx.abort();return;}
+        store.put(saved,KEY);
+      };
+      tx.oncomplete=resolve;
+      tx.onabort=()=>reject(failure || tx.error || new Error('Your stats could not be saved. The previous saved Hero profile was kept.'));
+      tx.onerror=()=>{failure=failure || tx.error;};
+    });
+    cached=saved;++generation;emit(saved,source);
+    if(channel)channel.postMessage('changed');
+    return copy(saved);
+  }
+  async function save(profile,expectedRevision) {return write(profile,expectedRevision,'save');}
+  async function clear(expectedRevision) {return write(PokerHeroModel.empty(),expectedRevision,'clear');}
+  // Only call after the combined workspace transaction has committed.
+  function acceptImported(profile) {
+    cached=PokerHeroModel.validate(profile);++generation;emit(cached,'restore');
+    if(channel)channel.postMessage('changed');
+    return copy(cached);
+  }
+  function onExternal() {
+    load('external').catch(error=>window.dispatchEvent(new CustomEvent('poker-hero-load-failed',{detail:{message:error?.message||'Saved Hero stats could not refresh. Your draft was kept.'}})));
+  }
+  if(channel)channel.onmessage=onExternal;
+  return {KEY,load,readSnapshot,save,clear,current:()=>copy(cached),acceptImported};
+})();
+
+</script>
+<script>
+
 /* Persistent table layouts share the player database but never duplicate profiles. */
 const PokerTablesStore = (() => {
   'use strict';
@@ -3159,10 +3472,16 @@ const PokerTablesStore = (() => {
     return {...value, revision};
   };
   function conflict() { return new Error('Tables changed in another tab. Reload the table workspace before editing again. Your previous saved tables were kept.'); }
-  async function load() {
+  async function load(allowMigration = true) {
     const db = await openPlayerDatabase();
     const raw = await readDatabaseStore(db, 'meta', KEY);
-    return raw === undefined ? empty() : validate(raw);
+    if (raw === undefined) return empty();
+    const normalized=validate(raw);
+    if (allowMigration && JSON.stringify(raw.tables)!==JSON.stringify(normalized.tables)) {
+      try { return await save(normalized); }
+      catch(error) { if (/changed in another tab/.test(error.message||'')) return load(false); throw error; }
+    }
+    return normalized;
   }
   async function save(raw) {
     const prepared = validate(raw);
@@ -3197,11 +3516,13 @@ const PokerTablesStore = (() => {
     // Raw identity is required for seat remapping; never infer a player from a seat label.
     const sourceIds = raw.players.map(p=>p && p.id);
     if (sourceIds.some(id=>typeof id!=='string' || !id || id.length>120) || new Set(sourceIds).size !== players.length) throw new Error('The backup has missing or duplicate player IDs. No data was changed.');
-    return {workspace,players,sourceIds};
+    const heroPresent = Object.prototype.hasOwnProperty.call(raw,'heroProfile');
+    const heroProfile = !heroPresent ? undefined : raw.heroProfile === null ? PokerHeroModel.empty() : PokerHeroModel.validate(raw.heroProfile);
+    return {workspace,players,sourceIds,heroPresent,heroProfile};
   }
   function validateBackup(raw) {
     const parsed = parseBackup(raw);
-    return {tableCount:parsed.workspace.tables.length,playerCount:parsed.players.length};
+    return {tableCount:parsed.workspace.tables.length,playerCount:parsed.players.length,heroIncluded:parsed.heroPresent,heroCleared:parsed.heroPresent && raw.heroProfile===null};
   }
   async function exportBackup() {
     const db = await openPlayerDatabase();
@@ -3209,25 +3530,31 @@ const PokerTablesStore = (() => {
       const tx=db.transaction(['players','meta'],'readonly');
       const players=tx.objectStore('players').getAll();
       const workspace=tx.objectStore('meta').get(KEY);
-      tx.oncomplete=()=>resolve({players:players.result,workspace:workspace.result});
+      const hero=tx.objectStore('meta').get(PokerHeroStore.KEY);
+      tx.oncomplete=()=>resolve({players:players.result,workspace:workspace.result,heroProfile:hero.result});
       tx.onabort=()=>reject(tx.error || new Error('Backup read failed. Please retry.'));
       tx.onerror=()=>{};
     });
     const players=snapshot.players.map(validatePlayerRecord);
     const workspace=snapshot.workspace === undefined ? empty() : validate(snapshot.workspace);
-    return {format:'hud-edge-table-workspace',version:1,exportedAt:new Date().toISOString(),players,workspace};
+    const heroProfile = snapshot.heroProfile === undefined ? null : PokerHeroModel.validate(snapshot.heroProfile);
+    return {format:'hud-edge-table-workspace',version:1,exportedAt:new Date().toISOString(),players,workspace,heroProfile};
   }
-  async function importBackup(raw, expectedRevision) {
+  async function importBackup(raw, expectedRevision, expectedHeroRevision) {
     const parsed=parseBackup(raw);
+    const expectedHero = !parsed.heroPresent ? undefined : expectedHeroRevision !== undefined ? expectedHeroRevision : (await PokerHeroStore.readSnapshot()).revision;
+    let restoredHero;
     const db=await openPlayerDatabase();
     const saved=await new Promise((resolve,reject)=>{
       const tx=db.transaction(['players','meta'],'readwrite');
       const players=tx.objectStore('players'), meta=tx.objectStore('meta');
       const playerRequest=players.getAll(), workspaceRequest=meta.get(KEY);
+      const heroRequest=parsed.heroPresent ? meta.get(PokerHeroStore.KEY) : null;
       let readCount=0, failure, result;
       const apply=()=>{
-        if (++readCount!==2) return;
+        if (++readCount!==(parsed.heroPresent?3:2)) return;
         if ((workspaceRequest.result === undefined ? null : workspaceRequest.result.revision)!==expectedRevision) {failure=conflict();tx.abort();return;}
+        if (parsed.heroPresent && (heroRequest.result === undefined ? null : heroRequest.result.revision)!==expectedHero) {failure=new Error('Your stats changed in another tab. Reload saved Hero stats before restoring this backup. No players or tables were changed.');tx.abort();return;}
         try {
           const existingByName=new Map(playerRequest.result.map(p=>[p.nameKey,p]));
           const idMap=new Map();
@@ -3244,16 +3571,19 @@ const PokerTablesStore = (() => {
             if (!missingIds.has(id)) missingIds.set(id,`missing_${newPlayerId()}`);
             return missingIds.get(id);
           };
-          const tables=parsed.workspace.tables.map(table=>({...table,seats:table.seats.map(seat=>seat && seat.kind==='player' ? {...seat,playerId:remap(seat.playerId)} : seat)}));
+          const remapSeat=seat=>seat && seat.kind==='player' ? {...seat,playerId:remap(seat.playerId)} : seat;
+          const tables=parsed.workspace.tables.map(table=>({...table,seats:table.seats.map(remapSeat),unseated:(table.unseated||[]).map(remapSeat)}));
           result=validate({...parsed.workspace,tables,revision:newPlayerId()});
           meta.put(result,KEY);
+          if (parsed.heroPresent) {restoredHero=PokerHeroModel.validate({...parsed.heroProfile,revision:newPlayerId()});meta.put(restoredHero,PokerHeroStore.KEY);}
         } catch(error) {failure=error;tx.abort();}
       };
-      playerRequest.onsuccess=apply; workspaceRequest.onsuccess=apply;
+      playerRequest.onsuccess=apply; workspaceRequest.onsuccess=apply;if(heroRequest)heroRequest.onsuccess=apply;
       tx.oncomplete=()=>resolve(result);
       tx.onabort=()=>reject(failure || tx.error || new Error('Restore failed. No players or tables were changed.'));
       tx.onerror=()=>{failure=failure || tx.error;};
     });
+    if (restoredHero) PokerHeroStore.acceptImported(restoredHero);
     if (databaseChannel) databaseChannel.postMessage('changed');
     if (channel) channel.postMessage('changed');
     try { await refreshPlayerDatabase(); }
@@ -3267,8 +3597,144 @@ const PokerTablesStore = (() => {
   return {load,save,exportBackup,validateBackup,importBackup};
 })();
 
+
 </script>
 <script>
+/* Own HUD data stays separate from saved opponents and their seating references. */
+(() => {
+  'use strict';
+  const KEYS=['vpip','pfr','threeBet','f3b','steal','cbet','fcbet','cr','wtsd','wsd'];
+  const LABELS=['VPIP','PFR','3-Bet','Fold to 3-Bet','Steal','Flop C-Bet','Fold to C-Bet','Check-Raise','WTSD','W$SD'];
+  const create=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
+  const makeButton=(id,text,handler,cls='')=>{const node=create('button','hero-profile__button '+cls,text);node.type='button';node.id=id;node.addEventListener('click',handler);return node;};
+  const copy=value=>JSON.parse(JSON.stringify(value));
+
+  function initializeHeroProfile(){
+    const database=document.getElementById('playerDatabaseSection');
+    if(!database||document.getElementById('heroProfileSection'))return;
+    const host=create('details','hero-profile');host.id='heroProfileSection';host.open=true;
+    const heading=create('summary','hero-profile__heading');
+    heading.append(create('span','','Your stats (Hero)'),create('span','hero-profile__heading-hint','Shared by your Hero seats at every table'));
+    host.append(heading);
+    const body=create('div','hero-profile__body');
+    body.append(create('p','hero-profile__help','Save your own HUD separately from opponents. Your observed tendencies personalize table guides; they do not establish your skill or change the opponent-based selection grade. Blank fields stay unknown.'));
+    const status=create('p','hero-profile__status','Opening your saved Hero profile…');status.id='heroProfileStatus';status.setAttribute('role','status');status.setAttribute('aria-live','polite');status.setAttribute('aria-atomic','true');body.append(status);
+    const recovery=create('div','hero-profile__recovery');recovery.hidden=true;
+    const meta=create('div','hero-profile__meta');
+    function field(labelText,id,placeholder,maxLength){const wrap=create('div','hero-profile__field');const label=create('label','',labelText);label.htmlFor=id;const input=create('input');input.id=id;input.type='text';input.autocomplete='off';if(placeholder)input.placeholder=placeholder;if(maxLength)input.maxLength=maxLength;wrap.append(label,input);return {wrap,input};}
+    const name=field('Your handle (optional)','heroPlayerNameInput','You',120);meta.append(name.wrap);
+    const hands=field('Actual hands (optional)','heroHandsInput','Unknown',20);hands.input.inputMode='numeric';hands.input.setAttribute('aria-describedby','heroCountHelp');meta.append(hands.wrap);
+    const showdowns=field('Actual showdowns (optional)','heroShowdownsInput','Unknown',20);showdowns.input.inputMode='numeric';showdowns.input.setAttribute('aria-describedby','heroCountHelp');meta.append(showdowns.wrap);
+    body.append(meta);const countHelp=create('p','hero-profile__help','Enter recorded counts only. Hands and showdowns are kept independently; neither is invented from the other.');countHelp.id='heroCountHelp';body.append(countHelp);
+    const pasteWrap=create('div','hero-profile__paste-wrap');const pasteLabel=create('label','hero-profile__label','Paste your HUD stats');pasteLabel.htmlFor='heroHudPaste';const paste=create('textarea');paste.id='heroHudPaste';paste.rows=2;paste.maxLength=2000;paste.spellcheck=false;paste.placeholder='24 / 20 / 7   or   24 20 7 50 40 62 48 7 28 52';paste.setAttribute('aria-describedby','heroHudOrder heroProfileStatus');
+    const order=create('p','hero-profile__help','3 values: VPIP / PFR / 3B. Or all 10: VPIP PFR 3B F3B STL CB FCB CR WTSD W$SD. Whole percentages; Enter applies.');order.id='heroHudOrder';
+    const apply=makeButton('btnApplyHeroHud','Apply your stats',applyPaste,'hero-profile__button--primary');pasteWrap.append(pasteLabel,paste,order,apply);body.append(pasteWrap);
+    const grid=create('div','hero-profile__stats');const inputs=new Map();
+    KEYS.forEach((key,index)=>{const f=field(LABELS[index]+' %','hero_num_'+key,'Unknown',20);f.input.inputMode='numeric';f.input.setAttribute('aria-describedby','heroStatHelp');f.input.dataset.heroStat=key;grid.append(f.wrap);inputs.set(key,f.input);});
+    body.append(grid);const statHelp=create('p','hero-profile__help','Use whole percentages from 0–100. PFR cannot exceed VPIP when both are entered. Enter advances through fields; Ctrl/⌘+Enter saves your Hero profile.');statHelp.id='heroStatHelp';body.append(statHelp);
+    const preview=create('div','hero-profile__preview');preview.id='heroProfilePreview';preview.setAttribute('aria-label','Your observed HUD profile');const previewHeading=create('strong');previewHeading.id='heroProfileSummary';const sample=create('p','hero-profile__help');sample.id='heroProfileSample';const flags=create('ul','hero-profile__flags');flags.id='heroProfileFlags';preview.append(previewHeading,sample,flags);body.append(preview);
+    const actions=create('div','hero-profile__actions');const save=makeButton('btnSaveHeroProfile','Save your stats',saveProfile,'hero-profile__button--primary');const clear=makeButton('btnClearHeroProfile','Clear saved Hero stats',clearProfile,'hero-profile__button--danger');
+    const reload=makeButton('btnReloadHeroProfile','Reload saved Hero',()=>reloadProfile(true));recovery.append(reload);actions.append(save,clear);body.append(actions,recovery);host.append(body);
+    (document.getElementById('tableWorkspaceSection')||database).before(host);
+
+    let loaded=false,busy=false,revision=null,baseline='',lastAppliedPaste='',pendingProfile=null,remoteChanged=false,loadSequence=0;
+    const rawFingerprint=()=>JSON.stringify({name:name.input.value,hands:hands.input.value,showdowns:showdowns.input.value,stats:KEYS.map(key=>inputs.get(key).value),paste:paste.value});
+    const dirty=()=>loaded&&rawFingerprint()!==baseline;
+    const say=(message,error=false)=>{status.textContent=message;status.classList.toggle('hero-profile__status--error',error);};
+    function lock(){host.querySelectorAll('input,textarea,button').forEach(node=>node.disabled=busy||!loaded);reload.disabled=busy;}
+    function setInvalid(input,message){input.setAttribute('aria-invalid','true');throw new Error(message);}
+    function integerInput(input,label,min,max){const raw=input.value.trim();if(raw==='')return null;if(!/^\d+$/.test(raw))return setInvalid(input,`${label} must be a whole number from ${min.toLocaleString()} to ${max.toLocaleString()}, or blank.`);const value=Number(raw);if(!Number.isSafeInteger(value)||value<min||value>max)return setInvalid(input,`${label} must be from ${min.toLocaleString()} to ${max.toLocaleString()}, or blank.`);return value;}
+    function readProfile(){
+      const candidate=PokerHeroModel.empty();candidate.revision=revision;candidate.playerName=name.input.value.trim()||'You';candidate.knownStats=[];
+      for(const key of KEYS){const input=inputs.get(key),value=integerInput(input,LABELS[KEYS.indexOf(key)]+' %',0,100);if(value!==null){candidate.stats[key]=value;candidate.knownStats.push(key);}}
+      candidate.hands=integerInput(hands.input,'Actual hands',1,500000);candidate.showdowns=integerInput(showdowns.input,'Actual showdowns',0,300000);
+      if(candidate.knownStats.includes('vpip')&&candidate.knownStats.includes('pfr')&&candidate.stats.pfr>candidate.stats.vpip)return setInvalid(inputs.get('pfr'),'PFR cannot exceed VPIP. Check your own HUD order before saving.');
+      return PokerHeroModel.validate(candidate);
+    }
+    function writeProfile(profile){
+      const known=new Set(profile.knownStats);name.input.value=profile.playerName==='You'?'':profile.playerName;
+      for(const key of KEYS)inputs.get(key).value=known.has(key)?String(profile.stats[key]):'';
+      hands.input.value=profile.hands===null?'':String(profile.hands);showdowns.input.value=profile.showdowns===null?'':String(profile.showdowns);
+      paste.value='';lastAppliedPaste='';host.querySelectorAll('[aria-invalid]').forEach(node=>node.removeAttribute('aria-invalid'));
+    }
+    function showPreview(){
+      try{
+        const profile=readProfile(),summary=PokerHeroModel.summary(profile);
+        previewHeading.textContent=summary.classification?`${profile.playerName} · ${summary.label}`:'Your profile · add observed VPIP and PFR';
+        sample.textContent=`${summary.knownCount}/10 stats entered · ${summary.sampleText}. These are tendencies, not a skill rating.`;
+        flags.replaceChildren();for(const text of summary.flags||[])flags.append(create('li','',text));
+        if(!summary.flags?.length)flags.append(create('li','','More observed stats help distinguish your tendencies.'));
+      }catch(error){previewHeading.textContent='Complete valid Hero inputs to preview your profile';sample.textContent=error.message;flags.replaceChildren();}
+    }
+    function accept(profile){revision=profile.revision;loaded=true;writeProfile(profile);baseline=rawFingerprint();remoteChanged=false;recovery.hidden=true;showPreview();}
+    function applyPaste(){
+      if(!loaded||busy)return false;
+      try{
+        // Parse only the replacement HUD first: a valid paste can correct stale
+        // invalid fields, and unrelated counts stay untouched until Save validates them.
+        const next=PokerHeroModel.parseHud(paste.value,PokerHeroModel.empty());
+        const text=paste.value;
+        for(const key of next.knownStats){inputs.get(key).value=String(next.stats[key]);inputs.get(key).removeAttribute('aria-invalid');}
+        lastAppliedPaste=text;paste.removeAttribute('aria-invalid');showPreview();
+        say(next.knownStats.length===10?'Applied your HUD stats. Save your profile to update Hero seats and guides.':'Applied your HUD stats. Missing percentages remain unknown; save to update Hero seats and guides.');return true;
+      }catch(error){paste.setAttribute('aria-invalid','true');say(error.message||'The pasted HUD was not applied. Your existing fields were kept.',true);return false;}
+    }
+    function settlePaste(){if(!paste.value.trim()||paste.value===lastAppliedPaste)return true;if(applyPaste())return true;paste.focus();return false;}
+    async function settlePending(){
+      if(!pendingProfile)return;const next=pendingProfile;pendingProfile=null;
+      if(next.revision===revision)return;
+      if(dirty()){remoteChanged=true;recovery.hidden=false;say('Your saved Hero profile changed elsewhere. Your draft is kept; reload the saved profile before replacing it.',true);return;}
+      accept(next);say('Your Hero profile updated. All Hero seats use the saved stats.');
+    }
+    async function reloadProfile(confirmDiscard=false){
+      if(busy)return;
+      if(confirmDiscard&&dirty()&&!window.confirm('Discard unsaved Hero inputs and reload your saved Hero profile? Opponents and tables will be kept.'))return;
+      const sequence=++loadSequence;busy=true;lock();say('Loading your Hero profile…');
+      try{const profile=await PokerHeroStore.load();if(sequence!==loadSequence)return;accept(profile);say(profile.knownStats.length?'Your saved Hero stats are ready. They are shared by all your Hero seats.':'Enter your own HUD stats. They stay separate from your saved opponents.');}
+      catch(error){say(error.message||'Your Hero profile could not load. Existing saved data was kept.',true);recovery.hidden=false;}
+      finally{busy=false;lock();await settlePending();}
+    }
+    async function saveProfile(){
+      if(!loaded||busy)return;if(!settlePaste())return;
+      let profile;try{profile=readProfile();}catch(error){say(error.message,true);return;}
+      busy=true;lock();say('Saving your Hero stats…');
+      try{const saved=await PokerHeroStore.save(profile,revision);accept(saved);say('Saved your Hero stats. All Hero seats and personalized table guides now use this profile.');}
+      catch(error){say((error.message||'Your Hero profile could not be saved.')+' Your draft is still here.',true);recovery.hidden=true;if(remoteChanged||/changed|revision|another tab|reload/i.test(error.message||''))recovery.hidden=false;}
+      finally{busy=false;lock();await settlePending();}
+    }
+    async function clearProfile(){
+      if(!loaded||busy)return;
+      if(!window.confirm('Clear your saved Hero stats and discard this Hero draft? Your opponent profiles and table seats will be kept.'))return;
+      busy=true;lock();say('Clearing your saved Hero stats…');
+      try{const cleared=await PokerHeroStore.clear(revision);accept(cleared);say('Cleared your Hero stats. Your seats remain, with no assumed personal HUD. Opponents are unchanged.');}
+      catch(error){say((error.message||'Hero stats could not be cleared.')+' Your previous inputs are kept.',true);recovery.hidden=false;}
+      finally{busy=false;lock();await settlePending();}
+    }
+    host.addEventListener('input',event=>{
+      if(!loaded||busy)return;event.target.removeAttribute?.('aria-invalid');
+      if(event.target!==paste)showPreview();
+      if(remoteChanged){recovery.hidden=false;say('Unsaved Hero draft kept. A newer saved profile exists; reload before replacing it.',true);}
+      else say('Unsaved Hero changes. Save your stats to update your table guides.');
+    });
+    paste.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.isComposing){event.preventDefault();if(applyPaste())hands.input.focus();}});
+    name.input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.isComposing){event.preventDefault();paste.focus();}});
+    const numeric=[...KEYS.map(key=>inputs.get(key)),hands.input,showdowns.input];
+    numeric.forEach((input,index)=>input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.isComposing){event.preventDefault();const next=numeric[index+(event.shiftKey?-1:1)];if(next){next.focus();next.select();}else(event.shiftKey?paste:save).focus();}}));
+    host.addEventListener('keydown',event=>{if(event.key==='Enter'&&(event.ctrlKey||event.metaKey)&&!event.altKey&&!event.isComposing){event.preventDefault();saveProfile();}});
+    window.addEventListener('poker-hero-updated',event=>{
+      const profile=event.detail?.profile;if(!profile||profile.revision===revision&&loaded)return;
+      if(busy){pendingProfile=profile;return;}
+      if(dirty()){remoteChanged=true;recovery.hidden=false;say('Your saved Hero profile changed elsewhere. Your draft is kept; reload the saved profile before replacing it.',true);return;}
+      accept(profile);say('Your Hero profile updated. All Hero seats use the saved stats.');lock();
+    });
+    lock();reloadProfile();
+  }
+  if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initializeHeroProfile);else initializeHeroProfile();
+})();
+
+</script>
+<script>
+
 /* Shared player references, independently saved table lineups. No network calls. */
 (() => {
   'use strict';
@@ -3289,62 +3755,81 @@ const PokerTablesStore = (() => {
     const createRow=el('div','tables-create');const nameField=el('div','tables-field');const newName=el('input');newName.id='newTableName';newName.type='text';newName.maxLength=80;newName.placeholder='e.g., Cash table 1';
     const nameLabel=el('label','','New table name');nameLabel.htmlFor=newName.id;nameField.append(nameLabel,newName);
     const countField=el('div','tables-field');const newCount=el('select');newCount.id='newTableSeatCount';const countLabel=el('label','','Seats');countLabel.htmlFor=newCount.id;
-    for(let n=2;n<=9;n++)newCount.append(option(String(n),String(n)));newCount.value='6';countField.append(countLabel,newCount);
+    for(let n=4;n<=9;n++)newCount.append(option(String(n),String(n)));newCount.value='6';countField.append(countLabel,newCount);
     createRow.append(nameField,countField);host.append(createRow);
     const nav=el('div','tables-toolbar');const selectBox=el('div','tables-field');const tableSelect=el('select');tableSelect.id='tableSelector';const selectLabel=el('label','','Current table');selectLabel.htmlFor=tableSelect.id;selectBox.append(selectLabel,tableSelect);nav.append(selectBox);
     const renameBox=el('div','tables-field');const activeName=el('input');activeName.id='activeTableName';activeName.type='text';activeName.maxLength=80;const activeNameLabel=el('label','','Rename selected table');activeNameLabel.htmlFor=activeName.id;renameBox.append(activeNameLabel,activeName);nav.append(renameBox);
     const renameButton=button('btnRenameTable','Rename',renameTable);const deleteButton=button('btnDeleteTable','Delete table',deleteTable,'tables-button--danger');nav.append(renameButton,deleteButton);host.append(nav);
-    const controls=el('div','tables-controls');const heroBox=el('div','tables-field');const heroSelect=el('select');heroSelect.id='heroSeatSelect';const heroLabel=el('label','','Your seat');heroLabel.htmlFor=heroSelect.id;heroBox.append(heroLabel,heroSelect);controls.append(heroBox);
+    const controls=el('div','tables-controls');const heroBox=el('div','tables-field');const heroSelect=el('select');heroSelect.id='heroSeatSelect';heroSelect.dataset.lockDisabled='true';const heroLabel=el('label','','Your seat — fixed');heroLabel.htmlFor=heroSelect.id;heroBox.append(heroLabel,heroSelect);controls.append(heroBox);
     const dealerBox=el('div','tables-field');const dealerSelect=el('select');dealerSelect.id='dealerSeatSelect';const dealerLabel=el('label','','Dealer button — current hand');dealerLabel.htmlFor=dealerSelect.id;dealerBox.append(dealerLabel,dealerSelect);controls.append(dealerBox);
     const nextDealer=button('btnNextDealer','Next dealer →',advanceDealer);controls.append(nextDealer);
-    const seatCountBox=el('div','tables-field');const seatCount=el('select');seatCount.id='tableSeatCount';const seatCountLabel=el('label','','Table size');seatCountLabel.htmlFor=seatCount.id;for(let n=2;n<=9;n++)seatCount.append(option(String(n),n+' seats'));seatCountBox.append(seatCountLabel,seatCount);controls.append(seatCountBox);host.append(controls);
+    const seatCountBox=el('div','tables-field');const seatCount=el('select');seatCount.id='tableSeatCount';const seatCountLabel=el('label','','Table size');seatCountLabel.htmlFor=seatCount.id;for(let n=4;n<=9;n++)seatCount.append(option(String(n),n+' seats'));seatCountBox.append(seatCountLabel,seatCount);controls.append(seatCountBox);host.append(controls);
     const layout=el('div','tables-layout');const boardWrap=el('div','tables-board-wrap');const board=el('div','tables-board');board.id='tableSeatMap';board.setAttribute('aria-label','Table seats in clockwise order');boardWrap.append(board,el('p','tables-muted tables-position-help','Seats run clockwise. Your immediate clockwise neighbor is on your left. The grade uses position across a full button orbit; the guide also shows this hand’s positions.'));
     const assessment=el('aside','tables-assessment');assessment.setAttribute('aria-label','Seat selection assessment');const gradeRow=el('div','tables-grade-row');const grade=el('strong','tables-grade','—');grade.id='tableGrade';const gradeText=el('div');gradeText.append(el('h3','','Table selection grade'));const gradeScore=el('p','tables-muted');gradeScore.id='tableGradeScore';gradeText.append(gradeScore);gradeRow.append(grade,gradeText);assessment.append(gradeRow);
-    const confidence=el('p','tables-confidence');confidence.id='tableGradeConfidence';assessment.append(confidence);const reasons=el('ul','tables-list');reasons.id='tableGradeReasons';assessment.append(reasons);
-    const guides=el('div','tables-guides');for(const [suffix,label]of[['Preflop','Preflop'],['Postflop','Flop & turn'],['River','River']]){const group=el('div');const h=el('h4','',label);const list=el('ul','tables-list');list.id='tableGuide'+suffix;group.append(h,list);guides.append(group);}assessment.append(guides,el('p','tables-muted','This is a relative lineup heuristic, not a win-rate prediction. Stack depth, stakes, rake, position-specific samples and your own edge still matter.'));
-    layout.append(boardWrap,assessment);host.append(layout);const empty=el('p','tables-empty','Create a table, choose your seat, then assign opponents from the player database.');empty.id='tablesEmptyState';host.append(empty);
+    const confidence=el('p','tables-confidence');confidence.id='tableGradeConfidence';assessment.append(confidence);const heroSummary=el('p','tables-muted');heroSummary.id='tableHeroSummary';assessment.append(heroSummary);const why=el('p','tables-grade-why');why.id='tableGradeWhy';assessment.append(why);const stackEvidence=el('p','tables-muted');stackEvidence.id='tableStackEvidence';assessment.append(stackEvidence);const reasons=el('ul','tables-list');reasons.id='tableGradeReasons';assessment.append(reasons);const breakdown=el('details','tables-breakdown');breakdown.id='tableGradeBreakdown';breakdown.append(el('summary','','How the grade is calculated'));const breakdownBody=el('div','tables-breakdown-body');breakdownBody.id='tableGradeBreakdownBody';breakdown.append(breakdownBody);assessment.append(breakdown);
+    const guides=el('div','tables-guides');for(const [suffix,label]of[['Preflop','Preflop'],['Postflop','Flop & turn'],['River','River']]){const group=el('div');const h=el('h4','',label);const list=el('ul','tables-list');list.id='tableGuide'+suffix;group.append(h,list);guides.append(group);}assessment.append(guides,el('p','tables-muted','This is a relative lineup heuristic, not a win-rate prediction. Entered effective stacks influence the grade; stakes, rake, position-specific samples and your own edge still matter.'));
+    layout.append(boardWrap,assessment);host.append(layout);const preserved=el('div','tables-preserved');preserved.id='tableUnseatedAssignments';host.append(preserved);const exploit=el('section','tables-exploits');exploit.id='tableExploitSection';exploit.setAttribute('aria-labelledby','tableExploitHeading');const exploitHeading=el('h3','','Opponent exploit cheat sheet');exploitHeading.id='tableExploitHeading';const exploitCards=el('div','tables-exploit-cards');exploitCards.id='tableExploitSheet';exploit.append(exploitHeading,el('p','tables-muted','Observed giveaways, seat position and confirmed effective stacks shape these conditional plans. Blank stacks remain unknown.'),exploitCards);host.append(exploit);const empty=el('p','tables-empty','Create a table; your seat is always Seat 4. Assign opponents and enter each table’s actual stack sizes in big blinds (BB).');empty.id='tablesEmptyState';host.append(empty);
     const sharedInfo=el('p','tables-muted');sharedInfo.id='tableSharedProfilesHelp';host.append(sharedInfo);
     const file=el('input');file.id='importTablesFile';file.type='file';file.accept='.json,application/json';file.hidden=true;file.setAttribute('aria-label','Choose full table workspace backup');host.append(file);
+    const glossary=el('details','tables-glossary');glossary.id='pokerGlossary';const glossarySummary=el('summary','','Terminology cheat sheet');glossary.append(glossarySummary);const terms=el('dl','tables-glossary-terms');
+    const glossaryTerms=[['VPIP','Voluntarily put money in pot: percentage of dealt hands entered with a voluntary call or raise, excluding forced blinds.'],['PFR','Preflop raise percentage. VPIP minus PFR is a broad passive-entry gap, not an exact limp or cold-call rate.'],['3B / 4B','Three-bet: the first reraise after an open. Four-bet: the next reraise. Frequencies use relevant opportunities, not all dealt hands.'],['F3B','Fold to a three-bet after opening. Position and raise size affect interpretation.'],['STL / steal','Opening from late positions to win the blinds. Check your HUD’s exact position definitions.'],['CB / c-bet','Continuation bet: betting after being the previous street’s aggressor. This app uses flop c-bet.'],['FCB','Fold to a flop continuation bet. This is different from folding every flop or folding to a turn barrel.'],['XR / CR','Check-raise: checking and then raising a bet on the same street. A high flop XR rate does not establish river bluff frequency.'],['WTSD','Went to showdown: usually showdowns as a percentage of hands where a flop was seen. Check the HUD definition.'],['W$SD','Won money at showdown: percentage of showdowns won. Variance and hand selection matter; it is not win rate.'],['BB / stack in BB','Big blind units. Divide a player’s chip stack by the big blind amount to enter their stack here. Blank means unknown.'],['Effective stack','The smaller stack between you and the opponent. For a three-way pot, different side pots can have different effective stacks.'],['SPR','Stack-to-pot ratio: effective stack divided by the pot on the street in question. A preflop stack in BB alone does not determine SPR.'],['BTN / SB / BB','Dealer button / small blind / big blind. Heads-up the button is the small blind; the big blind acts first postflop.'],['UTG / LJ / HJ / CO','Under the gun / lojack / hijack / cutoff: positions before the button. Position names depend on the number of occupied seats.'],['IP / OOP','In position / out of position: acting after / before an opponent on that street. The seat grade averages postflop position across a full button orbit.'],['TAG / LAG','Tight-aggressive / loose-aggressive profiles. A label describes observed frequencies, not proof of skill or profit.'],['Nit / station / whale','Informal labels for very selective entries / sticky calling / very wide entries. Use the actual observed stats and current lines.'],['Iso / isolation raise','Raising to play against a particular caller, ideally in position. Stack depth and players behind still matter.'],['Value / thin value','Betting to be called by worse hands; thin value means the margin over the calling range is small.'],['Barrel','A continued bet on a later street. Flop c-bet frequency cannot establish turn or river barreling.'],['Bluff-catcher','A hand that mainly beats bluffs and loses to the opponent’s value bets. Use sizing, blockers and observed lines.'],['Blockers','Cards in your hand that reduce the combinations of particular hands an opponent can hold.'],['Polarized / merged','Polarized ranges emphasize strong hands and bluffs; merged ranges include more medium-strength value hands.'],['Equity / fold equity','Equity is your share of the pot if hands run out; fold equity is the chance an opponent folds to your action.'],['Orbit / table grade','An orbit moves the button through occupied seats. The grade is a transparent lineup heuristic; it does not predict win rate or replace table, rake, stack and sample context.']];
+    for(const [term,definition]of glossaryTerms)terms.append(el('dt','',term),el('dd','',definition));glossary.append(terms);host.append(glossary);
+    const headerActions=document.getElementById('btnOpenChartModal')?.parentElement;if(headerActions&&!document.getElementById('btnToggleGlossary')){headerActions.classList.add('tables-header-actions');const toggle=button('btnToggleGlossary','Terms',()=>{glossary.open=!glossary.open;if(glossary.open)glossary.scrollIntoView({behavior:'smooth',block:'start'});});toggle.setAttribute('aria-controls','pokerGlossary');toggle.setAttribute('aria-expanded','false');glossary.addEventListener('toggle',()=>toggle.setAttribute('aria-expanded',String(glossary.open)));headerActions.append(toggle);}
     databaseSection.before(host);
-    let state=null,saving=false,dirty=false,loading=false,loadSequence=0,remotePending=false,playerRefreshBlocked=false;
+    const pageHeader=document.querySelector('body > header');if(pageHeader){const updateHeaderOffset=()=>document.documentElement.style.setProperty('--hud-header-offset',Math.ceil(pageHeader.getBoundingClientRect().height+12)+'px');updateHeaderOffset();if(typeof ResizeObserver!=='undefined')new ResizeObserver(updateHeaderOffset).observe(pageHeader);else window.addEventListener('resize',updateHeaderOffset);}
+
+    let state=null,saving=false,dirty=false,loading=false,loadSequence=0,remotePending=false,playerRefreshBlocked=false,renderDepth=0;
     const playerMap=()=>new Map((playerRefreshBlocked||typeof cachedPlayers==='undefined'?[]:cachedPlayers).map(p=>[p.id,p]));
+    let heroUnavailable=false;
+    const heroProfile=()=>heroUnavailable ? null : PokerHeroStore.current();
+    const heroName=()=>heroProfile()?.playerName || 'You';
     const active=()=>state?.tables.find(t=>t.id===state.activeTableId)||null;
     const say=(message,error=false)=>{status.textContent=message;status.classList.toggle('tables-status--error',error);};
-    const lock=()=>{host.querySelectorAll('button,input,select').forEach(n=>n.disabled=saving||loading||!state);recovery.querySelectorAll('button').forEach(n=>n.disabled=saving||loading||(n.id==='btnRetryTablesSave'&&!state));};
-    const displaySeat=(seat,players)=>!seat?'Open seat':seat.kind==='hero'?'You (hero)':seat.kind==='unknown'?(seat.name||'Unknown opponent'):(players.get(seat.playerId)?.playerName||'Missing saved profile');
+    const lock=()=>{host.querySelectorAll('button,input,select').forEach(n=>n.disabled=saving||loading||!state||n.dataset.lockDisabled==='true');recovery.querySelectorAll('button').forEach(n=>n.disabled=saving||loading||(n.id==='btnRetryTablesSave'&&!state));};
+    const displaySeat=(seat,players)=>!seat?'Open seat':seat.kind==='hero'?heroName()+' (hero)':seat.kind==='unknown'?(seat.name||'Unknown opponent'):(players.get(seat.playerId)?.playerName||'Missing saved profile');
     const revision=()=>state?.revision??null;
+    const stackDrafts=new Map();let pendingStackFocus=null;
+    function restoreStackFocus(){if(!pendingStackFocus||saving||loading)return;const wanted=pendingStackFocus;pendingStackFocus=null;const target=[...host.querySelectorAll('[data-stack-draft-key]')].find(n=>n.dataset.stackDraftKey===wanted.key);if(target&&!target.disabled){target.focus();if(wanted.selection?.[0]!==null)target.setSelectionRange(wanted.selection[0],wanted.selection[1]);}}
+    const stackKey=(table,index,seat)=>JSON.stringify([table.id,index,seat?.kind||'open',seat?.playerId||seat?.name||'']);
     async function reload(external=false){
       if(saving||dirty){remotePending=true;if(external)say('Tables changed in another tab. Your draft is kept; export it or reload the saved workspace before continuing.',true);return;}
       const sequence=++loadSequence;loading=true;lock();
       try{const loaded=await PokerTablesStore.load();if(sequence!==loadSequence)return;state=loaded;dirty=false;remotePending=false;render();say(state.tables.length?'Saved tables loaded. Lineups share the latest player profiles.':'No saved tables yet. Add your first table below.');}
       catch(error){say(error?.message||'Tables could not be loaded. Your player database is unchanged.',true);recovery.hidden=false;}
-      finally{loading=false;lock();}
+      finally{loading=false;lock();restoreStackFocus();}
     }
     async function persist(next,message,focusSelector){
       if(saving||loading)return;
-      state=next;dirty=true;saving=true;render();say('Saving table workspace…');lock();
-      try{const saved=await PokerTablesStore.save(state);state=saved;dirty=false;render();say(message||'Table workspace saved.');}
+      let success=false;state=next;dirty=true;saving=true;render();say('Saving table workspace…');lock();
+      try{const saved=await PokerTablesStore.save(state);state=saved;dirty=false;success=true;render();say(message||'Table workspace saved.');}
       catch(error){dirty=true;say((error?.message||'The table workspace could not be saved.')+' Your changes are retained in this tab. Retry save or reload the saved workspace.',true);render();}
-      finally{saving=false;lock();if(remotePending&&!dirty)await reload(true);if(focusSelector)host.querySelector(focusSelector)?.focus();}
+      finally{saving=false;lock();if(remotePending&&!dirty)await reload(true);if(focusSelector)host.querySelector(focusSelector)?.focus();else restoreStackFocus();}
+      return success;
     }
     async function mutateTable(nextTable,message,focusSelector){
       if(!state||!active()||saving||loading)return;
-      const next={...clone(state),tables:state.tables.map(t=>t.id===nextTable.id?nextTable:clone(t))};await persist(next,message,focusSelector);
+      const next={...clone(state),tables:state.tables.map(t=>t.id===nextTable.id?nextTable:clone(t))};return await persist(next,message,focusSelector);
     }
     function renderList(node,values){node.replaceChildren();for(const value of values||[])node.append(el('li','',String(value)));}
     function render(){
+      renderDepth++;try{
+      const focused=document.activeElement;const focusDraftKey=focused?.dataset?.stackDraftKey;const focusSelection=focusDraftKey?[focused.selectionStart,focused.selectionEnd]:null;if(focusDraftKey)pendingStackFocus={key:focusDraftKey,selection:focusSelection};
       if(!state){lock();return;}
       const table=active(),players=playerMap();
       tableSelect.replaceChildren();if(!state.tables.length)tableSelect.append(option('','No tables yet'));for(const t of state.tables){const rating=PokerTablesModel.scoreTable(t,players);tableSelect.append(option(t.id,t.name+(rating.grade?' · '+rating.grade+(rating.provisional?' (provisional)':''):' · not graded')));}tableSelect.value=state.activeTableId||'';
-      nav.hidden=!table;controls.hidden=!table;layout.hidden=!table;empty.hidden=Boolean(table);
+      nav.hidden=!table;controls.hidden=!table;layout.hidden=!table;empty.hidden=Boolean(table);preserved.hidden=!table;exploit.hidden=!table;
       recovery.hidden=!(dirty||remotePending);sharedInfo.textContent=playerRefreshBlocked?'Player details need a refresh. Lineup grades treat profiles as unknown until the player database reloads.':players.size?'Player edits update every table containing that profile. Removing a player profile leaves a visible missing-profile seat until you reassign it.':'Save players in the database first to assign their full profiles. You can still use unknown opponent seats.';
-      if(!table){board.replaceChildren();lock();return;}
+      if(!table){board.replaceChildren();lock();pendingStackFocus=null;return;}
+      for(const key of stackDrafts.keys()){const [tableId,index]=JSON.parse(key);if(tableId===table.id&&(index>=table.seatCount||stackKey(table,index,table.seats[index])!==key))stackDrafts.delete(key);}
       if(document.activeElement!==activeName)activeName.value=table.name;seatCount.value=String(table.seatCount);
-      heroSelect.replaceChildren(option('','Choose your seat'));dealerSelect.replaceChildren();for(let i=0;i<table.seatCount;i++){heroSelect.append(option(String(i),'Seat '+(i+1)));dealerSelect.append(option(String(i),'Seat '+(i+1)+(table.seats[i]?'':' · open')));}const heroIndex=table.seats.findIndex(s=>s?.kind==='hero');heroSelect.value=heroIndex<0?'':String(heroIndex);dealerSelect.value=String(table.buttonSeat);
-      const result=PokerTablesModel.scoreTable(table,players);grade.textContent=result.grade||'—';grade.dataset.grade=result.grade||'none';gradeScore.textContent=result.score===null?'Assign your seat and enough observed opponent profiles.':`Relative score ${Math.round(result.score)}/100 · full button orbit`;
+      heroSelect.replaceChildren(option('3',heroName()+' · Seat 4 (fixed)'));heroSelect.value='3';dealerSelect.replaceChildren();for(let i=0;i<table.seatCount;i++)dealerSelect.append(option(String(i),'Seat '+(i+1)+(table.seats[i]?'':' · open')));const heroIndex=3;dealerSelect.value=String(table.buttonSeat);
+      const result=PokerHeroModel.adaptAssessment(PokerTablesModel.scoreTable(table,players),heroProfile());grade.textContent=result.grade||'—';grade.dataset.grade=result.grade||'none';gradeScore.textContent=result.score===null?'Assign your seat and enough observed opponent profiles.':`Relative score ${Math.round(result.score)}/100 · full button orbit`;
+      const own=heroProfile(), ownKeys=new Set(own?.knownStats||[]);
+      const ownHud=own ? `VPIP ${ownKeys.has('vpip')?own.stats.vpip:'—'} / PFR ${ownKeys.has('pfr')?own.stats.pfr:'—'} / 3B ${ownKeys.has('threeBet')?own.stats.threeBet:'—'}` : 'Not entered';
+      heroSummary.textContent=heroUnavailable ? 'Your stats could not refresh. Own-stat guide adjustments are paused.' : `${heroName()} · Your stats: ${ownHud}. Own stats inform the guide; per-table stacks affect the grade when known.`;
       confidence.textContent=[result.provisional?'Provisional assessment':'Observed lineup assessment',result.confidence,`${result.coverage?.known??0}/${result.coverage?.total??0} opponents have usable profiles`].filter(Boolean).join(' · ');
-      renderList(reasons,result.reasons);renderList(document.getElementById('tableGuidePreflop'),result.guides?.preflop);renderList(document.getElementById('tableGuidePostflop'),result.guides?.postflop);renderList(document.getElementById('tableGuideRiver'),result.guides?.river);
-      board.replaceChildren();board.dataset.seatCount=String(table.seatCount);const felt=el('div','tables-felt');felt.append(el('strong','',table.name),el('span','',heroIndex<0?'Choose your seat':'You: seat '+(heroIndex+1)),el('small','','Clockwise seat order'));board.append(felt);
+      renderList(reasons,result.reasons);renderGradeExplanation(result,table);renderPreserved(table,players);renderExploitSheet(result,players);renderList(document.getElementById('tableGuidePreflop'),result.guides?.preflop);renderList(document.getElementById('tableGuidePostflop'),result.guides?.postflop);renderList(document.getElementById('tableGuideRiver'),result.guides?.river);
+      board.replaceChildren();board.dataset.seatCount=String(table.seatCount);const felt=el('div','tables-felt');felt.append(el('strong','',table.name),el('span','',heroIndex<0?'Choose your seat':heroName()+': seat '+(heroIndex+1)),el('small','','Clockwise seat order'));board.append(felt);
       const positions=new Map((result.positions||[]).map(p=>[p.seatIndex,p]));
       const used=new Set(table.seats.filter(s=>s?.kind==='player').map(s=>s.playerId));
       const sortedPlayers=[...players.values()].sort((a,b)=>a.playerName.localeCompare(b.playerName,undefined,{numeric:true,sensitivity:'base'}));
@@ -3354,31 +3839,82 @@ const PokerTablesStore = (() => {
         const profile=seat?.kind==='player'?players.get(seat.playerId):null;const color=profile?.classification?.colorKey;card.style.setProperty('--seat-color',COLORS[color]||'#64748b');
         const top=el('div','tables-seat-top');const seatLabel=el('label','','Seat '+(index+1));seatLabel.htmlFor='tableSeat_'+index;const pos=positions.get(index);const badge=el('span','tables-position',pos?.label||'Open');top.append(seatLabel,badge);card.append(top);
         const select=el('select','tables-seat-select');select.id='tableSeat_'+index;select.dataset.tableSeat=String(index);select.setAttribute('aria-label','Assign player to seat '+(index+1));
-        select.append(option('','Open seat'),option('unknown','Unknown opponent'),option('hero','You (hero)'));
+        if(index===3){select.append(option('hero',heroName()+' (hero)'));select.dataset.lockDisabled='true';}else select.append(option('','Open seat'),option('unknown','Unknown opponent'));
         if(seat?.kind==='player'&&!players.has(seat.playerId))select.append(option('player:'+seat.playerId,'Missing profile · reassign'));
-        for(const p of sortedPlayers){const name=p.playerName+(p.classification?.colorKey?' · '+p.classification.colorKey:'');const o=option('player:'+p.id,name);if(used.has(p.id)&&seat?.playerId!==p.id)o.disabled=true;select.append(o);}
+        for(const p of index===3?[]:sortedPlayers){const name=p.playerName+(p.classification?.colorKey?' · '+p.classification.colorKey:'');const o=option('player:'+p.id,name);if(used.has(p.id)&&seat?.playerId!==p.id)o.disabled=true;select.append(o);}
         select.value=!seat?'':seat.kind==='player'?'player:'+seat.playerId:seat.kind;select.title=displaySeat(seat,players);
         select.addEventListener('change',()=>assignSeat(index,select.value));card.append(select);
-        const meta=el('p','tables-seat-meta',seat?.kind==='hero'?'Your seat':profile?.classification?.subBadge||(!seat?'Available':seat.kind==='unknown'?'No observed profile':'Missing profile; treated as unknown'));meta.title=meta.textContent;card.append(meta);
+        const meta=el('p','tables-seat-meta',seat?.kind==='hero'?heroName()+' · Your seat':profile?.classification?.subBadge||(!seat?'Available':seat.kind==='unknown'?'No observed profile':'Missing profile; treated as unknown'));meta.title=meta.textContent;card.append(meta);if(seat?.kind==='hero'){const hud=el('p','tables-seat-meta',ownHud);hud.dataset.heroHud='';hud.title=ownHud;card.append(hud);}
+        appendStackInput(card,seat,index);
         const dealer=el('button','tables-dealer'+(table.buttonSeat===index?' tables-dealer--active':''),table.buttonSeat===index?'● Dealer button':'Set button');dealer.type='button';dealer.dataset.dealerSeat=String(index);dealer.setAttribute('aria-label','Set dealer button at seat '+(index+1));dealer.setAttribute('aria-pressed',String(table.buttonSeat===index));dealer.addEventListener('click',()=>changeDealer(index));card.append(dealer);board.append(card);
       });
-      lock();
+      lock();restoreStackFocus();
+      }finally{renderDepth--;}
+    }
+    function formatBb(value){return Number.isFinite(value)?value.toLocaleString(undefined,{maximumFractionDigits:2})+' BB':'Unknown';}
+    function appendStackInput(card,seat,index){
+      const table=active(),key=stackKey(table,index,seat),draft=stackDrafts.get(key);
+      const field=el('div','tables-stack-field'),label=el('label','','Stack · BB');label.htmlFor='tableStack_'+index;
+      const input=el('input','tables-stack-input');input.id='tableStack_'+index;input.type='text';input.inputMode='decimal';input.maxLength=12;input.placeholder=seat?'Unknown':'Open seat';input.dataset.tableStack=String(index);input.dataset.stackDraftKey=key;input.autocomplete='off';input.title='Enter saves and advances to the next occupied stack; Shift+Enter goes back.';input.setAttribute('aria-label','Stack in big blinds for seat '+(index+1));input.value=draft?draft.raw:seat&&Number.isFinite(seat.stackBb)?String(seat.stackBb):'';if(draft?.invalid)input.setAttribute('aria-invalid','true');if(!seat)input.dataset.lockDisabled='true';
+      const commit=async(focusAfter=null)=>{
+        const current=active();if(renderDepth>0||!input.isConnected||!current||saving||loading||stackKey(current,index,current.seats[index])!==key)return;
+        const raw=input.value.trim();
+        if(raw&&!/^(?:\d+(?:\.\d{1,2})?|\.\d{1,2})$/.test(raw)){input.setAttribute('aria-invalid','true');stackDrafts.set(key,{raw:input.value,invalid:true});say('Nothing changed. Enter a stack in BB using no more than two decimal places, or leave it blank for unknown.',true);if(focusAfter)input.focus();return;}
+        const value=raw===''?null:Number(raw);
+        if(value!==null&&(!Number.isFinite(value)||value<0.1||value>10000)){input.setAttribute('aria-invalid','true');stackDrafts.set(key,{raw:input.value,invalid:true});say('Nothing changed. A known stack must be 0.10–10,000 BB. Blank means unknown.',true);if(focusAfter)input.focus();return;}
+        try{input.removeAttribute('aria-invalid');const next=PokerTablesModel.setStack(current,index,value);const saved=await mutateTable(next,'Stack saved for this table only. Effective stacks and the grade have updated.');if(saved){stackDrafts.delete(key);pendingStackFocus=null;render();if(focusAfter)host.querySelector(focusAfter)?.focus();}else if(focusAfter)host.querySelector('[data-table-stack="'+index+'"]')?.focus();}
+        catch(error){say(error.message,true);input.setAttribute('aria-invalid','true');stackDrafts.set(key,{raw:input.value,invalid:true});}
+      };
+      input.addEventListener('input',()=>{stackDrafts.set(key,{raw:input.value,invalid:false});input.removeAttribute('aria-invalid');});
+      input.addEventListener('change',()=>{if(renderDepth===0&&input.isConnected)commit();});
+      input.addEventListener('blur',()=>{if(renderDepth===0&&input.isConnected&&stackDrafts.has(key))commit();});
+      input.addEventListener('keydown',event=>{if(event.key!=='Enter'||event.isComposing)return;event.preventDefault();const current=active(),occupied=current.seats.flatMap((value,i)=>value?[i]:[]),position=occupied.indexOf(index);const nextIndex=occupied[(position+(event.shiftKey?-1:1)+occupied.length)%occupied.length];commit('[data-table-stack="'+nextIndex+'"]');});
+      field.append(label,input);card.append(field);
+    }
+    function renderGradeExplanation(result,table){
+      const b=result.gradeBreakdown;const unknown=table.seats.filter(seat=>seat&&!Number.isFinite(seat.stackBb)).length;
+      stackEvidence.textContent=unknown?`${unknown} occupied seat stack${unknown===1?' is':'s are'} unknown. Effective stacks require both your stack and that opponent’s stack; no 100 BB assumption is made.`:'All occupied stacks are entered. Effective stack is the smaller of your stack and each opponent’s stack.';
+      breakdownBody.replaceChildren();
+      if(!b||result.score===null){why.textContent='Not graded yet: add enough observed opponent profiles. Stack sizes alone cannot establish a favorable table.';breakdownBody.append(el('p','tables-muted','A grade needs observed VPIP/PFR and enough opponents. Unknown or preserved, unseated players receive no assumed edge.'));return;}
+      const signed=n=>(n>=0?'+':'')+Number(n).toFixed(2);
+      why.textContent=`Grade ${result.grade}: base ${b.base.toFixed(0)}, lineup ${signed(b.lineup)}, position ${signed(b.position)}, stacks ${signed(b.stack)}, and sample adjustment ${signed(b.sample)} points. Final score ${result.score}/100.`;
+      const formula=el('p','tables-formula',b.formula||'Base + lineup + position + effective stacks + sample adjustment, then clamp to 0–100 and round.');breakdownBody.append(formula);
+      const components=el('dl','tables-grade-components');for(const [key,label]of[['base','Starting score'],['lineup','Observed lineup'],['position','Seat position'],['stack','Effective stacks'],['sample','Sample / evidence adjustment'],['clamp','0–100 cap adjustment'],['rounding','Rounding'],['score','Final score']]){const value=b[key];if(Number.isFinite(value)){components.append(el('dt','',label),el('dd','',key==='base'||key==='score'?value.toFixed(2):signed(value)));}}breakdownBody.append(components);
+      const thresholds=el('p','tables-muted',(b.thresholds||[]).map(t=>`${t.grade}: ${t.min}+`).join(' · '));breakdownBody.append(thresholds,el('p','tables-muted','Displayed component values are rounded to two decimals. The underlying score uses full precision. This rubric is not expected profit or a skill rating.'));
+    }
+    function renderPreserved(table,players){
+      preserved.replaceChildren();const queue=table.unseated||[];preserved.hidden=!queue.length;if(!queue.length)return;
+      preserved.append(el('h3','','Preserved assignments — not currently seated'),el('p','tables-muted','An older layout needed room for your fixed Seat 4. These opponents and their table stacks were retained. Place them into an open seat; they are excluded from the current grade until seated.'));
+      const list=el('div','tables-preserved-list');list.id='tableUnseatedList';const open=table.seats.flatMap((seat,i)=>seat||i===3?[]:[i]);
+      queue.forEach((seat,index)=>{const row=el('div','tables-preserved-row');row.append(el('strong','',displaySeat(seat,players)),el('span','tables-muted',formatBb(seat.stackBb)));const choose=el('select');choose.dataset.unseatedTarget=String(index);choose.setAttribute('aria-label','Open seat for preserved '+displaySeat(seat,players));if(!open.length){choose.append(option('','No open seats'));choose.dataset.lockDisabled='true';}else for(const i of open)choose.append(option(String(i),'Seat '+(i+1)));const place=el('button','tables-button','Place');place.type='button';place.dataset.placeUnseated=String(index);if(!open.length)place.dataset.lockDisabled='true';place.addEventListener('click',async()=>{const current=active();if(!current||saving||loading)return;try{await mutateTable(PokerTablesModel.seatUnseated(current,index,Number(choose.value)),'Preserved opponent seated without losing its stack.');}catch(error){say(error.message,true);}});row.append(choose,place);list.append(row);});preserved.append(list);
+    }
+    function renderExploitSheet(result,players){
+      exploitCards.replaceChildren();const rows=result.exploitSheet||[];if(!rows.length){exploitCards.append(el('p','tables-muted','Seat opponents to see their individual observed cues and practical plans.'));return;}
+      for(const item of rows){const card=el('article','tables-exploit-card');card.dataset.exploitSeat=String(item.seatIndex);card.style.setProperty('--opponent-color',COLORS[item.colorKey]||'#64748b');const head=el('div','tables-exploit-header');head.append(el('h4','',item.name),el('span','tables-exploit-badge','Seat '+(item.seatIndex+1)+(item.colorKey?' · '+item.colorKey:'')));card.append(head);
+        card.append(el('p','tables-muted',`Stack: ${formatBb(item.stackBb)} · Effective vs you: ${formatBb(item.effectiveStackBb)}${item.provisional?' · provisional':''}`));
+        const cues=el('ul','tables-list');renderList(cues,item.observedGiveaways?.length?item.observedGiveaways:['Not enough observed HUD stats. No leaks are assumed.']);card.append(cues);
+        for(const [key,label]of[['preflop','Preflop'],['postflop','Flop & turn'],['river','River']]){const values=item[key]||[];if(values.length){card.append(el('h5','',label));const list=el('ul','tables-list');renderList(list,values);card.append(list);}}
+        if(item.cautions?.length){const notes=el('ul','tables-list tables-exploit-cautions');renderList(notes,item.cautions);card.append(notes);}
+        const profile=item.playerId?players.get(item.playerId):null;if(typeof profile?.customTell==='string'&&profile.customTell.trim())card.append(el('p','tables-live-read','Saved live read: '+profile.customTell));exploitCards.append(card);
+      }
     }
     async function addTable(){
-      if(!state||saving||loading)return;try{const name=newName.value.trim()||'Table '+(state.tables.length+1);const table=PokerTablesModel.createTable(name,Number(newCount.value));const next={...clone(state),activeTableId:table.id,tables:[...state.tables,table]};await persist(next,`Created ${name}. Choose your seat and add opponents.`,'#heroSeatSelect');if(!dirty)newName.value='';}catch(error){say(error.message,true);}
+      if(!state||saving||loading)return;try{const name=newName.value.trim()||'Table '+(state.tables.length+1);const table=PokerTablesModel.createTable(name,Number(newCount.value));const next={...clone(state),activeTableId:table.id,tables:[...state.tables,table]};await persist(next,`Created ${name}. Your seat is fixed at Seat 4; add opponents and stacks.`,'#heroSeatSelect');if(!dirty)newName.value='';}catch(error){say(error.message,true);}
     }
     async function renameTable(){const table=active();if(!table||saving||loading)return;const name=activeName.value.trim();if(!name){say('Enter a table name before renaming.',true);activeName.focus();return;}try{const changed=PokerTablesModel.validateTable({...clone(table),name,updatedAt:new Date().toISOString()});await mutateTable(changed,'Table renamed.','#activeTableName');}catch(error){say(error.message,true);}}
     async function deleteTable(){const table=active();if(!table||saving||loading)return;if(!window.confirm(`Delete “${table.name}” and its seating layout? Saved player profiles will be kept.`))return;const tables=state.tables.filter(t=>t.id!==table.id);await persist({...clone(state),tables,activeTableId:tables[0]?.id||null},'Table deleted. Saved player profiles are unchanged.','#tableSelector');}
     async function assignSeat(index,value){
-      const table=active();if(!table||saving||loading)return;const players=playerMap();try{let next;if(value==='hero'){
-        const occupant=table.seats[index];if(occupant&&occupant.kind!=='hero'&&!window.confirm(`Replace ${displaySeat(occupant,players)} in seat ${index+1} with you? Their saved profile will be kept.`)){render();return;}
-        next=PokerTablesModel.moveHero(table,index);
-      }else{const seat=!value?null:value==='unknown'?{kind:'unknown'}:{kind:'player',playerId:value.slice(7)};next=PokerTablesModel.setSeat(table,index,seat);}
-      await mutateTable(next,'Seat assignment saved. Other tables keep their own seating.','[data-table-seat="'+index+'"]');}catch(error){say(error.message,true);render();}
+      const table=active();if(!table||saving||loading)return;
+      if(index===3||value==='hero'){say('Your seat is fixed at Seat 4 and cannot be cleared or moved.',true);render();return;}
+      try{let seat=!value?null:value==='unknown'?{kind:'unknown'}:{kind:'player',playerId:value.slice(7)};
+        const base=clone(table);if(seat?.kind==='player'){const queued=(base.unseated||[]).find(entry=>entry.kind==='player'&&entry.playerId===seat.playerId);if(queued)seat={...queued};base.unseated=(base.unseated||[]).filter(entry=>entry.kind!=='player'||entry.playerId!==seat.playerId);}
+        const next=PokerTablesModel.setSeat(base,index,seat);
+        await mutateTable(next,'Seat assignment saved. A different occupant starts with an unknown stack; other tables keep their own stacks.','[data-table-seat="'+index+'"]');
+      }catch(error){say(error.message,true);render();}
     }
     async function changeDealer(index){const table=active();if(!table||saving||loading)return;try{const next=PokerTablesModel.validateTable({...clone(table),buttonSeat:index,updatedAt:new Date().toISOString()});await mutateTable(next,'Dealer button updated. The orbit grade is unchanged; the current-hand guide has updated.','#dealerSeatSelect');}catch(error){say(error.message,true);}}
     async function advanceDealer(){const table=active();if(!table)return;let next=table.buttonSeat;for(let step=1;step<=table.seatCount;step++){const i=(table.buttonSeat+step)%table.seatCount;if(table.seats[i]){next=i;break;}}await changeDealer(next);}
-    async function resizeTable(){const table=active();if(!table)return;const count=Number(seatCount.value);if(count<table.seatCount&&table.seats.slice(count).some(Boolean)&&!window.confirm('Reducing the table size removes assignments in seats '+(count+1)+'–'+table.seatCount+'. Saved player profiles will be kept. Continue?')){render();return;}try{const seats=table.seats.slice(0,count);while(seats.length<count)seats.push(null);await mutateTable(PokerTablesModel.validateTable({...clone(table),seatCount:count,seats,buttonSeat:Math.min(table.buttonSeat,count-1),updatedAt:new Date().toISOString()}),'Table size updated.','#tableSeatCount');}catch(error){say(error.message,true);render();}}
+    async function resizeTable(){const table=active();if(!table||saving||loading)return;try{await mutateTable(PokerTablesModel.resizeTable(table,Number(seatCount.value)),'Table size updated; Seat 4 remains yours.','#tableSeatCount');}catch(error){say(error.message,true);render();}}
     const addButton=button('btnAddTable','Add table',addTable,'tables-button--primary');createRow.append(addButton);
     const exportButton=button('btnExportTables','Export tables + players',async()=>{
       if(!state||saving||loading)return;
@@ -3387,15 +3923,17 @@ const PokerTablesStore = (() => {
     const importButton=button('btnImportTables','Import tables + players',()=>file.click());backupActions.append(exportButton,importButton);
     recovery.append(button('btnRetryTablesSave','Retry save',()=>persist(clone(state),'Table changes saved.')),button('btnReloadTables','Reload saved tables',async()=>{if(dirty&&!window.confirm('Discard unsaved table changes and reload the latest saved workspace?'))return;dirty=false;await reload();}));
     tableSelect.addEventListener('change',async()=>{if(!state||saving||loading)return;await persist({...clone(state),activeTableId:tableSelect.value||null},'Selected table saved.','#tableSelector');});
-    heroSelect.addEventListener('change',()=>{if(heroSelect.value!=='')assignSeat(Number(heroSelect.value),'hero');else{const index=active()?.seats.findIndex(seat=>seat?.kind==='hero')??-1;if(index>=0)assignSeat(index,'');}});dealerSelect.addEventListener('change',()=>changeDealer(Number(dealerSelect.value)));seatCount.addEventListener('change',resizeTable);
+    heroSelect.addEventListener('change',()=>{heroSelect.value='3';say('Your seat is always Seat 4.');});dealerSelect.addEventListener('change',()=>changeDealer(Number(dealerSelect.value)));seatCount.addEventListener('change',resizeTable);
     newName.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addTable();}});activeName.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();renameTable();}});
     file.addEventListener('change',async()=>{
       const chosen=file.files[0];if(!chosen)return;if(saving||loading){file.value='';return;}
-      try{if(chosen.size>20*1024*1024)throw new Error('Choose a table workspace backup smaller than 20 MB.');let backup;try{backup=JSON.parse(await chosen.text());}catch{throw new Error('This file is not valid JSON. Nothing was changed.');}const summary=await PokerTablesStore.validateBackup(backup);if(!window.confirm(`Import ${summary.tableCount} table(s) and ${summary.playerCount} player profile(s)? This replaces your saved table workspace and may overwrite player profiles with matching names. Export a backup first if you need the current layout. Unmatched player profiles will be kept.`))return;
-        saving=true;lock();const saved=await PokerTablesStore.importBackup(backup,revision());state=saved;dirty=false;playerRefreshBlocked=Boolean(saved.refreshWarning);render();say(saved.refreshWarning||'Imported tables and player profiles. Shared seats use the restored profiles.',Boolean(saved.refreshWarning));
+      try{if(chosen.size>20*1024*1024)throw new Error('Choose a table workspace backup smaller than 20 MB.');let backup;try{backup=JSON.parse(await chosen.text());}catch{throw new Error('This file is not valid JSON. Nothing was changed.');}const summary=await PokerTablesStore.validateBackup(backup);const expectedHeroRevision=PokerHeroStore.current()?.revision??null;if(!window.confirm(`Import ${summary.tableCount} table(s) and ${summary.playerCount} player profile(s)? This replaces your saved table workspace and may overwrite player profiles with matching names. Export a backup first if you need the current layout. Unmatched player profiles will be kept. ${summary.heroIncluded ? summary.heroCleared ? 'This backup explicitly clears your saved Hero stats.' : 'Your saved Hero stats will also be replaced by this backup.' : 'This older backup does not include Hero stats; your saved Hero stats will be kept.'}`))return;
+        saving=true;lock();const saved=await PokerTablesStore.importBackup(backup,revision(),expectedHeroRevision);state=saved;dirty=false;playerRefreshBlocked=Boolean(saved.refreshWarning);render();say(saved.refreshWarning||'Imported tables and player profiles. Shared seats use the restored profiles.',Boolean(saved.refreshWarning));
       }catch(error){say((error.message||'Import failed.')+' Nothing was replaced unless the database confirmed the import.',true);}
       finally{saving=false;file.value='';render();lock();if(remotePending&&!dirty)await reload(true);}
     });
+    window.addEventListener('poker-hero-updated',()=>{heroUnavailable=false;if(state)render();});
+    window.addEventListener('poker-hero-load-failed',()=>{heroUnavailable=true;if(state)render();});
     window.addEventListener('poker-players-updated',()=>{playerRefreshBlocked=false;if(state)render();});
     window.addEventListener('poker-tables-updated',()=>reload(true));
     window.addEventListener('focus',()=>{if(state&&!saving&&!dirty)reload(true);});
@@ -3403,6 +3941,7 @@ const PokerTablesStore = (() => {
   }
   if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initializeTables);else initializeTables();
 })();
+
 
 </script>
 </body>
